@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Anna Semenova](https://up.htmlacademy.ru/htmlcss/34/user/2067193).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Березин](https://htmlacademy.ru/profile/id263537).
 
 ---
 
