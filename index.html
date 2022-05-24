@@ -93,23 +93,43 @@
         </p>
         <a class="button button-search" href="search.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
-      <section>
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="#" method="#">
-
-        </form>
-        <a class="button button-subscribe" href="#">Подписаться</a>
-      </section>
     </main>
   </body>
   <footer class="page-footer">
-    <section class="footer-social visually-hidden">
+    <section class="newsletter">
+      <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+      <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label for="newsletter-email">Email</label>
+        <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+      </form>
+    </section>
+    <section class="footer-social">
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+          </a>
+        </li>
+      </ul>
     </section>>
     <section class="footer-contacts">
-        <h2 class="visually-hidden">+7 (812) 812-12-12</h2>
+        <h2 class="footer-contacts-phone">+7 (812) 812-12-12</h2>
     </section>
-    <section class="footer-logo">
+    <section class="footer-contacts-logo">
       <img class="logo" alt="Сайт разработан компанией html-academy">
     </section>>
   </footer>  
