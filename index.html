@@ -50,7 +50,7 @@
             <p class="advantages-description">— №1 —</p>
             <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
-           <ul>
+           <ul class="advantages-list">
               <li class="advantages-item">
                 <h3 class="advantages-title">Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -90,13 +90,37 @@
         <h2 class="search-hotel-title">Заинтересовались?</h2>
         <p class="search-hotel-description">Укажите предполагаемые даты поездки,
           <br >и мы покажем вам лучшие предложения гостиниц в Седоне
+          <br><button class="button button-find" type="sumbit">ПОИСК ГОСТИНИЦЫ В седоне</button>
         </p>
-        <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
-          <p class="search-hotel-form-date">
-            <label for="search-hotel-date-togo">Дата заезда</label>
-            <input type="text" id="search-hotel-date-togo" placeholder="26.05.2022">
+        <h2 class="find-hotel-title">Поиск гостиницы в Седоне</h2>
+        <form class="find-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="find-hotel-form-date">
+            <label for="arrival-date">
+              <h4 class="arrival-date">Дата Заезда</h4>
+            </label>
+            <input type="date" id="arrival-date" placeholder="27 апреля 2022">
+            <br>Мы не можем отправить вас в прошлое
           </p>
-            <button class="button button-search" type="sumbit">ПОИСК ГОСТИНИЦЫ В седоне</button>
+           <p class="find-hotel-form-date">
+            <label for="departure-date">
+              <h4 class="arrival-date">Дата Выезда</h4>
+            </label>
+            <input type="date" id="departure-date" placeholder="1 сентября 2021">
+            <br>На эти даты есть свободные номера. Пока есть.
+          </p>
+          <p class="find-hotel-form-date">
+            <label for="adults">
+              <h4 class="arrival-date">Взрослые</h4>
+            </label>
+            <input type="number" id="adults" placeholder="2">
+          </p>
+          <p class="find-hotel-form-date">
+            <label for="children">
+              <h4 class="arrival-date">Дети</h4>
+            </label>
+            <input type="number" id="children" placeholder="1">
+          </p>                    
+          <br><button class="button button-search" type="sumbit">Найти</button>
         </form>
       </section>
     </main>
