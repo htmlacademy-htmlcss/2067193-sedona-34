@@ -90,22 +90,85 @@
               <legend class="catalog-filter-title">
                 <h4 class="catalog-filter-h4">Стоимость, <span>₽</span>:</h4>
               </legend>
-              <label class="control">от<input lass="control-input" type="text" value="0"></label>
-              <label class="control">до<input lass="control-input" type="text" value="9000"></label>
+              <label class="control">от<input сlass="control-input" type="text" value="0"></label>
+              <label class="control">до<input сlass="control-input" type="text" value="9000"></label>
             </fieldset>
             <button type="sumbit" name="apply-button">Применить</button>
             <button type="reset" name="clean-button">Сбросить</button>
             <!--место для ползунка-->
           </form>
+        </section>
       </header>
-      <section class="">
+      <section class="inner-section">
+        <h2 class="inner-section-title">Найдено гостиниц: 38</h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap" checked>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-    </section>
-
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать слайд-шоу</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <ul class="hotel-list">
+        <li class="holel-card">
+          <a class="holel-card-link" href="#">
+            <img class="holel-card-image" src="" alt="">
+            <h3 class="holel-card-title">Amara Resort & Spa</h3>
+          </a>
+          <p class="holel-card-text">Гостиница</p>
+          <p class="holel-card-price">От 4000 ₽</p>
+          <a class="holel-card-button button" href="#">Подробнее</a>
+          <button type="sumbit" name="apply-button">в избранное</button>
+          <p class="holel-card-star">Рейтинг: 8,5</p>
+        </li>
+        <li class="holel-card">
+          <a class="holel-card-link" href="#">
+            <img class="holel-card-image" src="" alt="">
+            <h3 class="holel-card-title">Villas at Poco Diablo</h3>
+          </a>
+          <p class="holel-card-text">Гостиница</p>
+          <p class="holel-card-price">От 5000 ₽</p>
+          <a class="holel-card-button button" href="#">Подробнее</a>
+          <button type="sumbit" name="apply-button">в избранном</button>
+          <p class="holel-card-star">Рейтинг: 9,2</p>
+        </li>
+        <li class="holel-card">
+          <a class="holel-card-link" href="#">
+            <img class="holel-card-image" src="" alt="">
+            <h3 class="holel-card-title">Desert Quail Inn</h3>
+          </a>
+          <p class="holel-card-text">Гостиница</p>
+          <p class="holel-card-price">От 2500 ₽</p>
+          <a class="holel-card-button button" href="#">Подробнее</a>
+          <button type="sumbit" name="apply-button">в избранное</button>
+          <p class="holel-card-star">Рейтинг: 6,9</p>
+        </li>
+        <li class="holel-card">
+          <a class="holel-card-link" href="#">
+            <img class="holel-card-image" src="" alt="">
+            <h3 class="holel-card-title">GreenTree Inn</h3>
+          </a>
+          <p class="holel-card-text">Гостиница</p>
+          <p class="holel-card-price">От 1500 ₽</p>
+          <a class="holel-card-button button" href="#">Подробнее</a>
+          <button type="sumbit" name="apply-button">в избранное</button>
+          <p class="holel-card-star">Рейтинг: 5,0</p>
+        </li>
+        </ul>
+        <button class="button pagination-show-more" type="button">10</button>
+        <p>Гостиниц на странице</p>
+        <select class="select-control" name="Гостиниц на странице">
+          <option value="4">4</option>
+          <option value="10">10</option>
+          <option value="20">38</option>
+        </select>
+      </section>
     </main>
     <footer class="page-footer">
       <section class="newsletter">
