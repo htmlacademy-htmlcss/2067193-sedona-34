@@ -51,32 +51,39 @@
             <a class="main-page-link">Гостиницы</a>
           </li>
         </ul>
-        <ul>
-          <li><h4>Инфраструктура:</h4></li>
-          <ul>
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>Wi-Fi</li>
-          </ul>
-          <li><h4>Тип жилья:</h4></li>
-          <ul>
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
-          </ul>
-          <li>
-            <form action="#" method="get">
-              <fieldset>
-                <legend>
-                  <h4>Стоимость, <span>₽</span>:</h4>
-                </legend>
-                <label>от<input type="text" value="0"></label>
-                <label>до<input type="text" value="9000"></label>
-              </fieldset>
-            </form>
-          </li>
-        </ul>
+        <form action="#" method="get">
+          <fieldset>
+           <legend>
+              <h4>Инфраструктура:</h4>
+           </legend>
+           <label><input type="checkbox" name="infrastructure" checked value="swimmingpool">Бассейн</label>
+           <br>
+           <label><input type="checkbox" name="infrastructure" checked value="parking">Парковка</label>
+           <br>
+           <label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h4>Тип Жилья:</h4>
+            </legend>
+            <label><input type="radio" name="type-house" checked value="hotel">Гостиница</label>
+            <br>
+            <label><input type="radio" name="type-house" value="motel">Мотель</label>
+            <br>
+            <label><input type="radio" name="type-house" value="appartament">Аппартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <h4>Стоимость, <span>₽</span>:</h4>
+            </legend>
+              <label>от<input type="text" value="0"></label>
+              <label>до<input type="text" value="9000"></label>
+          </fieldset>
+          <button>Применить</button>
+          <button type="reset">Сбросить</button>
+          </form>
       </header>
+      
 
     </main>
     <footer class="page-footer">
