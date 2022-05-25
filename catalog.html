@@ -51,39 +51,60 @@
             <a class="main-page-link">Гостиницы</a>
           </li>
         </ul>
-        <form action="#" method="get">
-          <fieldset>
-           <legend>
-              <h4>Инфраструктура:</h4>
-           </legend>
-           <label><input type="checkbox" name="infrastructure" checked value="swimmingpool">Бассейн</label>
-           <br>
-           <label><input type="checkbox" name="infrastructure" checked value="parking">Парковка</label>
-           <br>
-           <label><input type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label>
-          </fieldset>
-          <fieldset>
-            <legend>
-              <h4>Тип Жилья:</h4>
-            </legend>
-            <label><input type="radio" name="type-house" checked value="hotel">Гостиница</label>
-            <br>
-            <label><input type="radio" name="type-house" value="motel">Мотель</label>
-            <br>
-            <label><input type="radio" name="type-house" value="appartament">Аппартаменты</label>
-          </fieldset>
-          <fieldset>
-            <legend>
-              <h4>Стоимость, <span>₽</span>:</h4>
-            </legend>
-              <label>от<input type="text" value="0"></label>
-              <label>до<input type="text" value="9000"></label>
-          </fieldset>
-          <button>Применить</button>
-          <button type="reset">Сбросить</button>
+        <section class="catalog-products">
+          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+           <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">
+               <h4 class="catalog-filter-h4">Инфраструктура:</h4>
+              </legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control"><input class="control-input" type="checkbox" name="infrastructure" checked value="swimmingpool">Бассейн</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control"><input class="control-input" type="checkbox" name="infrastructure" checked value="parking">Парковка</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control"><input class="control-input" type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">
+                <h4 class="catalog-filter-h4">Тип Жилья:</h4>
+              </legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control"><input class="control-input" type="radio" name="type-house" checked value="hotel">Гостиница</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control"><input class="control-input" type="radio" name="type-house" value="motel">Мотель</label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control"><input class="control-input" type="radio" name="type-house" value="appartament">Аппартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">
+                <h4 class="catalog-filter-h4">Стоимость, <span>₽</span>:</h4>
+              </legend>
+              <label class="control">от<input lass="control-input" type="text" value="0"></label>
+              <label class="control">до<input lass="control-input" type="text" value="9000"></label>
+            </fieldset>
+            <button type="sumbit" name="apply-button">Применить</button>
+            <button type="reset" name="clean-button">Сбросить</button>
+            <!--место для ползунка-->
           </form>
       </header>
-      
+      <section class="">
+        <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap" checked>Сначала дешёвые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+    </section>
 
     </main>
     <footer class="page-footer">
