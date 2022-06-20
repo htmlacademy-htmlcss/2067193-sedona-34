@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -10,7 +10,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
@@ -35,7 +35,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    Line height: 100%;
+    line-height: 100%;
     text-align: left;
     color: #000000;
     background-color: #ffffff;
@@ -54,19 +54,65 @@ body {
 /* Преимущества */
 
 .advantages {
+    width: 1200px;
+    height: 282px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.advantages-main {
+    position: absolute;
+    width: 620px;
+    height: 72px;
+    margin-left: 290px;
+    margin-top: 63px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.advantages-main-description {
+    position: absolute;
+    width: 654px;
+    height: 26px;
+    margin-left: 273px;
+    margin-top: 166px;
+
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Преимущества Список */
+
+.advantages-plus {
+    width: 1200px;
+    height: 1535px;
     text-align: center;
 }
 
 .advantages-list {
     width: 400px;
     height: 384px;
+    padding-left: 0;
+}
+
+.advantages-item {
+    list-style-type: none;
 }
 
 .advantages-title {
-    font-family: "PT Sans", sans-serif;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-left: 85px;
+    margin-right: 85px;
 }
 
 .advantages-image {
@@ -80,15 +126,38 @@ body {
 }
 
 .transparency {
+    color: #000000;
     background: rgba(131, 179, 211, 0.12);
 }
 
 .white {
+    color: #000000;
     background: #FFFFFF;
 }
 
 .light-blue {
     background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-description {
+    margin-left: 85px;
+    margin-right: 85px;
+    
+    color:#333333;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.white-font {
+    color: #ffffff;
+}
+
+.advantages-image {
+    display: inline-block;
+    width: 800px;
+    height: 384px;
 }
 
 /*Поиск отеля*/
@@ -98,10 +167,11 @@ body {
     height: 417px;
 }
 
-/*ПОдвал*/
+/*Подвал*/
 
 .page-footer {
-    
+    width: 1200px;
+    height: 531px;
 }
 
 /*Подписка*/
@@ -120,7 +190,6 @@ body {
     margin-left: 398px;
     position: absolute;
 
-    font-family: "PT Sans", sans-serif;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -145,4 +214,20 @@ body {
 .footer-social {
     width: 1200px;
     height: 120px;
+    background-color: #ffffff;
+}
+
+.footer-contacts {
+    width: 331px;
+    height: 40px;
+}
+
+.footer-contacts-phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
 }
