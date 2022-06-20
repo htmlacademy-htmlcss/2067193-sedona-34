@@ -15,14 +15,87 @@
 }
 
 body {
-    font-family: "PT Sans";
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
 }
 
+/* Шапка */
+.page-header {
+    color: #000000;
+    background-color: #ffffff;
+}
 
+.navigation-link {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
 
+.navigation-search {
+    /*добавить векторную картинку поиска*/
+    /*position: absolute;
+    width: 18.05px;
+    height: 18.1px;
+    left: calc(50% - 18.05px/2 + 0px);
+    top: calc(50% - 18.1px/2 - 0.5px);*/
+    background: #000000;
+}
 
+.navigation-favorite {
+/*добавить векторную картинку избранного*/
 
+}
 
+.navigation-button {
+    width: 160px;
+    height: 37px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-left: 970px;
+    margin-right: 70px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #756157;
+    border-radius: 4px;
+}
+
+.want-here-a {
+    width: 130px;
+    height: 20px;
+    margin-top: 9px;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.want-here-span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756157;
+}
+
+/* Главная */
+
+.main-index {
+    background-image: url("images/index-bg.jpg");
+  }
 
 
 .advantages-image {
