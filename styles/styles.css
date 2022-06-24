@@ -214,16 +214,18 @@ padding-left: 0px;
 /*Подвал*/
 
 .page-footer {
-    width: 1200px;
-    height: 531px;
+    /*width: 1200px;
+    height: 531px;*/
+    background-color: #ffffff;
 }
 
 /*Подписка*/
 
 .newsletter {
     background-image: url("../images/decor/page-footer.jpg");
-    width: 1200px;
-    height: 411px;
+    /*width: 1200px;
+    height: 411px;*/
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.12);
 }
@@ -353,6 +355,7 @@ padding-left: 0px;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    color: #ffffff;
 }
 /*Каталог фильтр заголовки */
 /*Инфрастурктура, тип жилья, стоимость*/
@@ -426,21 +429,25 @@ padding-left: 0px;
     color: #000000;
 }
 /*Сортировка*/
-.select-control{
+.sorting-container{
+    /*width: 141px;
+    height: 21px;*/
+    color: #333333;
     background-color: #ffffff;
 }
 
-.cheap, .popular, .expensive {
-    width: 141px;
-    height: 21px;
+.select-control{
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    padding-right: 129px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    color: #333333;
 }
-/*Вариация показов*/
+
 .button-watching {
-    width: 48px;
+    /*width: 48px;
     height: 48px;
     border: 2px solid #000000;
     border-radius: 4px;
@@ -456,11 +463,22 @@ padding-left: 0px;
     /*background-color: #000000;*/
 }
 
+.button-light {
+    color: #000000;
+    background-color: #ffffff;
+}
+
 /*Список гостиниц*/
 .holel-card {
-    width: 340px;
-    height: 438px;
+    background-color: #ffffff;
+    /*width: 340px;
+    height: 438px;*/
 }
+
+.holel-card-link {
+    text-decoration: none;
+}
+
 /*Изображения гостиниц*/
 .holel-card-image {
     padding-left: 20px;
@@ -469,14 +487,14 @@ padding-left: 0px;
 /*Amara Resort & Spa*/
 .holel-card-title {
     /*position: absolute;*/
-    width: 300px;
+    /*width: 300px;
     height: 28px;
     padding-left: 20px;
-    padding-top: 247px;
+    padding-top: 247px;*/
 
     font-weight: 700;
     font-size: 24px;
-    line-height: 28px;
+    /*line-height: 28px;*/
     color: #000000;
 }
 /*Гостиница*/
@@ -485,7 +503,7 @@ padding-left: 0px;
     height: 21px;*/
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    /*line-height: 21px;*/
     color: #333333;
 }
 /*От .... ₽*/
@@ -494,7 +512,7 @@ padding-left: 0px;
     height: 21px;*/
     font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    /*line-height: 21px;*/
     color: #333333;
 
 }
@@ -561,7 +579,22 @@ padding-left: 0px;
 
 .pagination-link {
     /*position: absolute;*/
+    color: #FFFFFF;
+    background-color: #82B3D3;;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
 
+    /*display: flex;*/
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.pagination-first {
+    color: #000000;
+    background-color: #F2F2F2;;;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
@@ -571,6 +604,7 @@ padding-left: 0px;
     text-align: center;
     text-transform: uppercase;
 }
+
 /*Гостиниц на странице*/
 .select-control {
     margin-top: 1147px;

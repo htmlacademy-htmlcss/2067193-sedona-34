@@ -97,21 +97,24 @@
       </header>
       <section class="inner-section">
         <h2 class="inner-section-title">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap" checked>Сначала дешeвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <!-- Вариация показов -->
-        <a href="#" class="button-watching button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button-watching" href="#">
-          <span class="visually-hidden">Показать слайд-шоу</span>
-        </a>
-        <a class="button-watching" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <!-- Сортировка -->
+        <div class="sorting-container">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap" checked>Сначала дешeвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <!-- Вариация показов -->
+          <a href="#" class="button-watching button-light">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button-watching" href="#">
+            <span class="visually-hidden">Показать слайд-шоу</span>
+          </a>
+          <a class="button-watching" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <ul class="hotel-list">
           <!-- Список гостиниц -->
         <li class="holel-card">
@@ -162,7 +165,7 @@
         <!-- Страницы результатов поиска -->
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link pagination-first" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
