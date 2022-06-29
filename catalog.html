@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Каталог</title>
   </head>
   <body>
@@ -41,10 +42,12 @@
     </header>
     <main class="main-inner">
       <header class="inner-header">
+        <!-- Главный заголовок -->
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
         <div class="main-page">
             <a class="main-page-link">Гостиницы</a>
         </div>
+        <!-- Фильтрация поиска гостиниц -->
         <section class="catalog-products">
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -84,8 +87,8 @@
               <legend class="catalog-filter-title">
                 <h4 class="catalog-filter-h4">Стоимость, <span>₽</span>:</h4>
               </legend>
-              <label class="control">от<input сlass="control-input" type="text" value="0"></label>
-              <label class="control">до<input сlass="control-input" type="text" value="9000"></label>
+              <label class="control control-prise">от<input сlass="control-input" type="text" value="0"></label>
+              <label class="control control-prise">до<input сlass="control-input" type="text" value="9000"></label>
             </fieldset>
             <button type="sumbit" name="apply-button">Применить</button>
             <button type="reset" name="clean-button">Сбросить</button>
@@ -94,70 +97,75 @@
       </header>
       <section class="inner-section">
         <h2 class="inner-section-title">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap" checked>Сначала дешёвые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать слайд-шоу</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать список</span>
-        </a>
+        <!-- Сортировка -->
+        <div class="sorting-container">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap" checked>Сначала дешeвые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
+          <!-- Вариация показов -->
+          <a href="#" class="button-watching button-light">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+          <a class="button-watching" href="#">
+            <span class="visually-hidden">Показать слайд-шоу</span>
+          </a>
+          <a class="button-watching" href="#">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </div>
         <ul class="hotel-list">
-          <!-- Изображения гостиниц -->
-        <li class="holel-card">
-          <a class="holel-card-link" href="#">
-            <img class="holel-card-image" src="images/hotel-1.jpg" width="300" height="200" alt="Отель Amara Resort & Spa">
-            <h3 class="holel-card-title">Amara Resort & Spa</h3>
-          </a>
-          <p class="holel-card-text">Гостиница</p>
-          <p class="holel-card-price">От 4000 ₽</p>
-          <a class="holel-card-button button" href="#">Подробнее</a>
-          <button name="apply-button">в избранное</button>
-          <p class="holel-card-star">Рейтинг: 8,5</p>
-        </li>
-        <li class="holel-card">
-          <a class="holel-card-link" href="#">
-            <img class="holel-card-image" src="images/hotel-2.jpg" width="300" height="200" alt="Отель Villas at Poco Diablo">
-            <h3 class="holel-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <p class="holel-card-text">Гостиница</p>
-          <p class="holel-card-price">От 5000 ₽</p>
-          <a class="holel-card-button button" href="#">Подробнее</a>
-          <button name="apply-button">в избранном</button>
-          <p class="holel-card-star">Рейтинг: 9,2</p>
-        </li>
-        <li class="holel-card">
-          <a class="holel-card-link" href="#">
-            <img class="holel-card-image" src="images/hotel-3.jpg" width="300" height="200" alt="Отель Desert Quail Inn">
-            <h3 class="holel-card-title">Desert Quail Inn</h3>
-          </a>
-          <p class="holel-card-text">Гостиница</p>
-          <p class="holel-card-price">От 2500 ₽</p>
-          <a class="holel-card-button button" href="#">Подробнее</a>
-          <button name="apply-button">в избранное</button>
-          <p class="holel-card-star">Рейтинг: 6,9</p>
-        </li>
-        <li class="holel-card">
-          <a class="holel-card-link" href="#">
-            <img class="holel-card-image" src="images/hotel-4.jpg" width="300" height="200" alt="Отель GreenTree Inn">
-            <h3 class="holel-card-title">GreenTree Inn</h3>
-          </a>
-          <p class="holel-card-text">Гостиница</p>
-          <p class="holel-card-price">От 1500 ₽</p>
-          <a class="holel-card-button button" href="#">Подробнее</a>
-          <button name="apply-button">в избранное</button>
-          <p class="holel-card-star">Рейтинг: 5,0</p>
-        </li>
+          <!-- Список гостиниц -->
+          <li class="holel-card">
+            <a class="holel-card-link" href="#">
+              <img class="holel-card-image" src="images/hotel-1.jpg" width="300" height="200" alt="Отель Amara Resort & Spa">
+              <h3 class="holel-card-title">Amara Resort & Spa</h3>
+            </a>
+            <p class="holel-card-text">Гостиница</p>
+            <p class="holel-card-price">От 4000 ₽</p>
+            <a class="holel-card-button button" href="#">Подробнее</a>
+            <button name="apply-button" class="apply-button">в избранное</button>
+            <p class="holel-card-star">Рейтинг: 8,5</p>
+          </li>
+          <li class="holel-card">
+            <a class="holel-card-link" href="#">
+              <img class="holel-card-image" src="images/hotel-2.jpg" width="300" height="200" alt="Отель Villas at Poco Diablo">
+              <h3 class="holel-card-title">Villas at Poco Diablo</h3>
+            </a>
+            <p class="holel-card-text">Гостиница</p>
+            <p class="holel-card-price">От 5000 ₽</p>
+            <a class="holel-card-button button" href="#">Подробнее</a>
+            <button name="apply-button" class="apply-button">в избранном</button>
+            <p class="holel-card-star">Рейтинг: 9,2</p>
+          </li>
+          <li class="holel-card">
+            <a class="holel-card-link" href="#">
+              <img class="holel-card-image" src="images/hotel-3.jpg" width="300" height="200" alt="Отель Desert Quail Inn">
+              <h3 class="holel-card-title">Desert Quail Inn</h3>
+            </a>
+            <p class="holel-card-text">Гостиница</p>
+            <p class="holel-card-price">От 2500 ₽</p>
+            <a class="holel-card-button button" href="#">Подробнее</a>
+            <button name="apply-button" class="apply-button">в избранное</button>
+            <p class="holel-card-star">Рейтинг: 6,9</p>
+          </li>
+          <li class="holel-card">
+            <a class="holel-card-link" href="#">
+              <img class="holel-card-image" src="images/hotel-4.jpg" width="300" height="200" alt="Отель GreenTree Inn">
+              <h3 class="holel-card-title">GreenTree Inn</h3>
+            </a>
+            <p class="holel-card-text">Гостиница</p>
+            <p class="holel-card-price">От 1500 ₽</p>
+            <a class="holel-card-button button" href="#">Подробнее</a>
+            <button name="apply-button" class="apply-button">в избранное</button>
+            <p class="holel-card-star">Рейтинг: 5,0</p>
+          </li>
         </ul>
+        <!-- Страницы результатов поиска -->
         <ul class="pagination">
           <li class="pagination-item">
-            <a class="pagination-link" href="#">1</a>
+            <a class="pagination-link pagination-first" href="#">1</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">2</a>
@@ -190,7 +198,7 @@
           </li>
         </ul>
         <p>Гостиниц на странице</p>
-        <select class="select-control" name="Гостиниц на странице">
+        <select class="select-control-hotel" name="Гостиниц на странице">
           <option value="4">4</option>
           <option value="10">10</option>
           <option value="20">38</option>
@@ -198,15 +206,13 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="newsletter">
-       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+      <section class="newsletter-catalog">
+        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
+          <label for="newsletter-email"> Ваш e-mail</label>
           <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">
-              <span class="visually-hidden">Подписаться</span>
-            </button>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
       <section class="footer-social">
@@ -229,8 +235,8 @@
             </a>
           </li>
         </ul>
-        </section>
-        <section class="footer-contacts">
+      </section>
+      <section class="footer-contacts">
           <h2 class="footer-contacts-phone">+7 (812) 812-12-12</h2>
       </section>
       <section class="footer-contacts-logo">
