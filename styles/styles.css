@@ -349,8 +349,6 @@ body {
     background-repeat: no-repeat;
     background-size: 100% auto;
     color: #FFFFFF;
-    width: 1200px;
-    height: 403px;
 }
 
 /* Главный заголовок */
@@ -484,20 +482,16 @@ body {
 }
 /*Гостиница*/
 .holel-card-text {
-    /*width: 140px;
-    height: 21px;*/
     font-weight: 400;
     font-size: 18px;
-    /*line-height: 21px;*/
+    line-height: 21px;
     color: #333333;
 }
 /*От .... ₽*/
 .holel-card-price {
-    /*width: 140px;
-    height: 21px;*/
     font-weight: 400;
     font-size: 18px;
-    /*line-height: 21px;*/
+    line-height: 21px;
     color: #333333;
 
 }
