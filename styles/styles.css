@@ -83,17 +83,24 @@ body {
 }
 
 .main-index {
-    background-image: url("../images/decor/main-picture-background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
     background-color: #ffffff;
     color: #000000;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 /*Векторная графика Седона*/
 .main-picture {
     width: 1200px;
     margin: 0 auto;
+    background-image: url("../images/decor/main-picture-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto; /*не ограничивать шириной 1200?*/
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .main-picture-welcome {
@@ -160,8 +167,18 @@ body {
 }
 
 .advantages-item {
-    width: 400px;
-    /*list-style-type: none;*/
+    list-style-type: none;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+.real-city {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: 33% 66%;
 }
 
 .advantages-title {
