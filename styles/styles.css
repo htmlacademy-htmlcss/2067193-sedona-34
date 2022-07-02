@@ -178,7 +178,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    box-sizing: 33% 66%;
+    flex: 33% 66%;
 }
 
 .advantages-title {
