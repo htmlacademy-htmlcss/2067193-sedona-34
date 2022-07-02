@@ -14,7 +14,15 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -31,9 +39,31 @@ body {
     background-color: #ffffff;
 }
 
+.page-header-logo {
+    display: block;
+    margin: 0 70px;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 390px;
+}
+
 .navigation-item {
     list-style-type: none;
-    padding-left: 0px;
+    /*padding-left: 0px;*/
+}
+
+.navigation-user {
+    max-width: 264px;
+    margin-left: auto;
 }
 
 .navigation-link {
@@ -48,6 +78,10 @@ body {
     vertical-align: top;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
 .main-index {
     background-image: url("../images/decor/main-picture-background.jpg");
     background-repeat: no-repeat;
@@ -56,8 +90,39 @@ body {
     color: #000000;
 }
 
-/* Преимущества */
+/*Векторная графика Седона*/
+.main-picture {
+    width: 1200px;
+    margin: 0 auto;
+}
 
+.main-picture-welcome {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-picture-gorgeous {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-picture-sedona {
+    display: block;
+    margin: 0 auto;
+}
+
+.main-picture-sedona::after {
+    /*width: 1200px;
+    height: 57px;
+    position: relative;
+    background-image: url("../images/decor/decor.svg");
+    bottom: -5px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;*/
+}
+
+/* Преимущества */
 .advantages {
     background-color: #ffffff;
     text-align: center;
@@ -81,25 +146,30 @@ body {
 }
 
 /* Преимущества Список */
-
 .advantages-plus {
     text-align: center;
 }
 
 .advantages-list {
-    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .advantages-item {
-    list-style-type: none;
+    width: 400px;
+    /*list-style-type: none;*/
 }
 
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;
     margin-left: 85px;
-    margin-right: 85px;
+    margin-right: 85px;*/
 }
 
 .advantages-image {
