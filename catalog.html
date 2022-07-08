@@ -9,14 +9,14 @@
   </head>
   <body>
     <header class="page-header">
+      <!-- Логотип -->
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Вернуться на главную страницу">
+      </a>
       <nav class="navigation">
-        <!-- Логотип -->
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны">
-        </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -25,19 +25,15 @@
             <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <div class="navigation-search">
-          <a class="navigation-link" href="#">Поиск</a>
-        </div>
-        <div class="navigation-favorite">
-            <a class="navigation-link" href="#">Избранное</a>
-        </div>
-        <div class="navigation-button">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">
-              Хочу сюда!
-              </span>
-            </a>
-        </div>
+          <div class="navigation-item navigation-user">
+            <a class="navigation-link" href="#">Поиск</a>
+          </div>
+          <div class="navigation-item navigation-user">
+              <a class="navigation-link" href="#">Избранное</a>
+          </div>
+          <div class="navigation-item navigation-user">
+            <a class="navigation-button-a" href="#">Хочу сюда!</a>
+          </div>
       </nav>
     </header>
     <main class="main-inner main-container">
@@ -94,8 +90,8 @@
                   <label class="control control-prise">от<input сlass="control-input" type="text" value="0"></label>
                   <label class="control control-prise">до<input сlass="control-input" type="text" value="9000"></label>
                 </fieldset>
-                <button type="sumbit" name="apply-button">Применить</button>
-                <button type="reset" name="clean-button">Сбросить</button>
+                <button class="button apply-button" type="sumbit" name="apply-button">Применить</button>
+                <button class="button clean-button" type="reset" name="clean-button">Сбросить</button>
               </div>
             </form>
           </section>
