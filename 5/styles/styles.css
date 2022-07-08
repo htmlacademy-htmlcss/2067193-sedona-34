@@ -28,6 +28,8 @@ body {
     line-height: 21px;
     color: #000000;
     background-color: #ffffff;
+    outline: 5px solid green;
+    outline-offset: -5px;;
 }
 
 .button {
@@ -47,7 +49,7 @@ body {
 }
 
 .visually-hidden {
-    visibility: hidden;
+    display: none;
 }
 /* Шапка */
 .page-header {
@@ -60,27 +62,37 @@ body {
 
 .page-header-logo {
     display: block;
-    margin: 0 70px;
+    margin: 0;
+    margin-left: 70px;
+    width: 139px;
 }
 
 .navigation {
     display: flex;
     width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 30px;
 }
 
 .navigation-list {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 62px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 390px;
+    margin: 0;
 }
 
 .navigation-item {
     list-style-type: none;
+    display: flex;
     /*padding-left: 0px;*/
 }
 
 .navigation-user {
+    display: flex;
     max-width: 264px;
     margin-left: auto;
 }
@@ -125,16 +137,19 @@ body {
 .main-picture-welcome {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .main-picture-gorgeous {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .main-picture-sedona {
     display: block;
     margin: 0 auto;
+    max-width: 100%;
 }
 
 .main-picture-sedona::after {
@@ -205,9 +220,10 @@ body {
 }
 
 .advantages-image {
-    /*display: inline-block;*/
+    display: block;
     width: 800px;
     height: 384px;
+    max-width: 100%;
 }
 
 .blue {
@@ -368,12 +384,6 @@ body {
     margin: 0px auto;
 }
 
-.page-footer-container {
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;
-}
-
 /*Подписка*/
 
 .newsletter {
@@ -381,19 +391,21 @@ body {
     background-size: 1200px;
     background-repeat: no-repeat;
     background-color: rgba(131, 179, 211, 0.12);
+    padding-top: 94px;
+    padding-bottom: 94px;
+    text-align: center;
 }
 
 .page-footer-title {
-    padding-top: 94px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
     color: #ffffff;
-    text-align: center
+    text-align: center;
 }
 
 .page-footer-description {
-    padding-top: 29px;
+    /*padding-top: 29px;*/
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -403,7 +415,7 @@ body {
 /*Форма email*/
 .newsletter-form {
     margin-top: 46px;
-    margin-bottom: 94px;
+    margin-left: 200px;
     background-color: #F2F2F2;
     width: 600px;
     height: 60px;
@@ -419,6 +431,8 @@ body {
 }
 /*Подписаться*/
 .newsletter-button {
+    margin-top: 0;
+    margin-left: 600px;
     width: 200px;
     height: 60px;
     background-color: #82B3D3;
@@ -430,12 +444,14 @@ body {
     border-width: 0px;
     color: #FFFFFF;
 }
+
 .page-footer-container {
-    margin-top: 0px auto;
-    padding-top: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    /*padding-top: 40px;
     padding-bottom: 30px;
     padding-left: 70px;
-    padding-right: 70px;
+    padding-right: 70px;*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -444,16 +460,17 @@ body {
 /*Социальные сети*/
 .footer-social {
     background-color: #ffffff;
-    margin-top: 0px auto;
+    margin-left: 70px;
+    width: 142px;
 }
 
 .footer-social-list {
     display: flex;
     justify-content: space-between;
     margin-top: 0px auto;
-    padding: 0px;
+    /*padding: 0px;
     padding-left: 12px;
-    padding-right: 12px;
+    padding-right: 12px;*/
 }
 
 .footer-social-item{
@@ -462,10 +479,15 @@ body {
     /*padding: 0px 6px 6px 0px;*/
 }
 
+.icon-social {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
 .footer-contacts {
-    /*width: 331px;
-    height: 40px;*/
-    margin-top: 0px auto;
+    width: 331px;
+    text-align: center;
+    margin: auto;
 }
 
 .footer-contacts-phone {
@@ -480,7 +502,8 @@ body {
 }
 
 .footer-contacts-logo {
-    margin-top: 0px auto;
+    margin-right: 70px;
+    width: 115px;
 }
 
 /* Каталог */
@@ -517,29 +540,35 @@ body {
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 0px;
-    margin-left: 109px;
+    margin-left: 110px;
 }
 /*Каталог фильтр заголовки */
 /*Инфрастурктура, тип жилья, стоимость*/
 .catalog-products {
     display: flex;
-    justify-content: space-between;
+    padding-top: 40px;
 }
 
 .catalog-filter {
-    width: 1060px;
-    margin-left: 70px;
-    margin-top: 35px;
-    margin-bottom: 70px;
+    display: flex;
+    width: 1200px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    padding-top: 0px;
 }
 
 .catalog-left-column {
+    display: flex;
     width: 366px;
 }
 .catalog-right-column {
+    display: flex;
     width: 518px;
 }
-
+.catalog-filter-group {
+    display: flex;
+}
 .catalog-filter-h4 {
     font-weight: 700;
     font-size: 20px;
@@ -572,9 +601,10 @@ body {
 .apply-button {
     width: 160px;
     height: 48px;
+    padding: 0px;
+
     border-radius: 4px;
     background-color: #82B3D3;
-
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -585,6 +615,10 @@ body {
 }
 /* Сбросить */
 .clean-button{
+    width: 160px;
+    height: 48px;
+    padding: 0px;
+
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -659,18 +693,16 @@ body {
     flex-wrap: wrap;
     margin: 0px auto;
     padding: 0px;
-
     background-color: #ffffff;
 }
 
 .holel-card {
     list-style-type: none;
-    display: flex;
+    display: grid;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
     width: 340px;
-    margin: 0px auto;
     min-height: 438px;
 }
 
@@ -682,6 +714,9 @@ body {
 .holel-card-image {
     padding-left: 20px;
     padding-top: 20px;
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
 }
 /*Amara Resort & Spa*/
 .holel-card-title {
