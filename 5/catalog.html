@@ -23,18 +23,20 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
+        <div class="navigation-list-right">
           <div class="navigation-item navigation-user">
-            <a class="navigation-link" href="#">Поиск</a>
+            <a class="navigation-link visually-hidden" href="#">Поиск</a>
           </div>
           <div class="navigation-item navigation-user">
-              <a class="navigation-link" href="#">Избранное</a>
+              <a class="navigation-link visually-hidden" href="#">Избранное</a>
           </div>
-          <div class="navigation-item navigation-user">
-            <a class="navigation-button-a" href="#">Хочу сюда!</a>
-          </div>
+        </div>
+        <div class="navigation-item">
+              <a class="navigation-link button navigation-button" href="catalog.html">Хочу сюда!</a>
+        </div>
       </nav>
     </header>
     <main class="main-inner main-container">
@@ -108,13 +110,13 @@
                 <option value="expensive">Сначала дорогие</option>
               </select>
               <!-- Вариация показов -->
-              <a href="#" class="button-watching button-light">
+              <a class="button-watching" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a class="button-watching" href="#">
+              <a class="button-watching button-light" href="#">
                 <span class="visually-hidden">Показать слайд-шоу</span>
               </a>
-              <a class="button-watching" href="#">
+              <a class="button-watching button-light" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
             </div>
@@ -169,53 +171,59 @@
             </ul>
           </div>
           <!-- Страницы результатов поиска -->
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-first" href="#">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">5</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">6</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">7</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">8</a>
-            </li><li class="pagination-item">
-              <a class="pagination-link" href="#">9</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
-            </li>
-          </ul>
-          <p>Гостиниц на странице</p>
-          <select class="select-control-hotel" name="Гостиниц на странице">
-            <option value="4">4</option>
-            <option value="10">10</option>
-            <option value="20">38</option>
-          </select>
+          <div class="pagination">
+            <div class="pagination-container">
+              <ul class="pagination-list">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-first" href="#">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">5</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">5</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">6</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">7</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">8</a>
+                </li><li class="pagination-item">
+                  <a class="pagination-link" href="#">9</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link" href="#">10</a>
+                </li>
+              </ul>
+            </div>
+            <div class="select-show">
+              <p class="select-description">Гостиниц на странице:</p>
+              <select class="select-control-hotel" name="Гостиниц на странице">
+                <option value="4">4</option>
+                <option value="10">10</option>
+                <option value="20">38</option>
+              </select>
+            </div>
+          </div>
         </section>
       </div>
     </main>
     <footer class="page-footer">
       <section class="newsletter-catalog">
           <h2 class="page-footer-title footer-title-catalog">Подпишитесь на рассылку</h2>
-          <p class="page-footer-description footer-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="page-footer-description footer-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="newsletter-email"> Ваш e-mail</label>
             <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
@@ -238,14 +246,14 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <a class="button footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
                 <img class="icon-social" src="images/icon-youtube.svg" width="22" height="17" alt="YouTube" title="YouTube">
               </a>
             </li>
           </ul>
         </section>
         <section class="footer-contacts">
-            <h2 class="footer-contacts-phone">+7 (812) 812-12-12</h2>
+          <h2 class="footer-contacts-phone">+7 (812) 812-12-12</h2>
         </section>
         <section class="footer-contacts-logo">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">
