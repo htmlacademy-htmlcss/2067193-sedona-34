@@ -82,7 +82,7 @@ body {
     margin-left: 30px;
 }
 
-.navigation-list {
+.navigation-list-left {
     display: flex;
     flex-wrap: wrap; 
     padding: 0px;
@@ -93,14 +93,15 @@ body {
 
 .navigation-list-right {
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 0px;
     padding: 0px;
     width: 264px;
-    margin-left: 70px;
     list-style-type: none;
 }
 
 .navigation-link {
+    position: relative;
     display: block;
     padding: 20px 17px;
     font-weight: 700;
@@ -111,11 +112,19 @@ body {
     background-color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
-    /*vertical-align: top;*/
 }
 
+.navigation-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    fill: #000000;
+}
 .navigation-user {
-    max-width: 250px;
+    max-width: 264px;
     margin-left: auto;
 }
   
@@ -123,6 +132,7 @@ body {
     min-width: 18px;
     min-height: 18px;
 }
+
 .navigation-button {
     margin-right: 70px;
     margin-top: 14px;
@@ -479,7 +489,6 @@ body {
 }
 
 /*Подписка*/
-
 .newsletter {
     background-image: url("../images/decor/page-footer.jpg");
     background-size: 1200px;
@@ -509,25 +518,38 @@ body {
 }
 /*Форма email*/
 .newsletter-form {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
     margin-top: 46px;
-    margin-left: 200px;
-    background-color: #F2F2F2;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
     width: 600px;
     height: 60px;
+    background-color: #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
 }
-.newsletter-email{
+
+.newsletter-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #000000;
-    padding-top: 20px;
-    padding-left: 22px;
+    /*padding-top: 20px;
+    padding-left: 22px;*/
 }
+
 /*Подписаться*/
 .newsletter-button {
-    margin-top: 0;
-    margin-left: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 60px;
     background-color: #82B3D3;
