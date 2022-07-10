@@ -398,7 +398,7 @@ body {
     color: #333333;
 }
 
-.departure-description .red {
+.departure-description.red {
     color: #FF5757;
 }
 
@@ -907,9 +907,9 @@ body {
     text-decoration: none;
 }
 
-/*.pagination-link:last-child {
+.pagination-link:last-of-type {
     padding: 12px 18.5px;
-}*/
+}
 
 .pagination-first {
     color: #000000;
