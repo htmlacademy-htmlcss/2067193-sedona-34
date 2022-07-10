@@ -357,11 +357,24 @@ body {
 
 /* Форма поиска*/
 .find-page {
-    background-color: #ffffff;
+    margin: 0px;
+    padding-top: 62px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    width: 715px;
+    background-color: #e5e5e5; /*временно, нужен белый!!!*/
+    color: #000000;
+    border: 0px solid;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+}
+.find-page-container {
+    background-color: #e5e5e5;
     color: #000000;
     border-radius: 30px;
-    margin: 0px auto;
-    padding-top: 62px;
+    margin: 0;
+    padding: 0;
 }
 
 .find-hotel-title {
@@ -372,16 +385,23 @@ body {
 }
 
 .find-hotel-form {
-    
+    display: grid;
+    /*flex-direction: column;
+    flex-wrap: wrap;*/
 }
 /* Дата заезда*/
+.find-hotel-form-date {
+    /*display: flex;
+    flex-wrap: wrap;*/
+}
 .arrival-date {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     align-items: center;
     text-transform: capitalize;
-    margin-top: 75px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .departure-date-input {
@@ -397,6 +417,8 @@ body {
     line-height: 21px;
     align-items: center;
     color: #333333;
+    margin: 0px;
+    padding: 0px;
 }
 
 .departure-description.red {
@@ -887,6 +909,7 @@ body {
     list-style-type: none;
 }
 .pagination-item {
+    
 }
 
 .pagination-item:not(:last-child) {
@@ -895,10 +918,13 @@ body {
   
 .pagination-link {
     display: block;
+    text-align: center;
+    align-items: center;
     box-sizing: border-box;
     width: 60px;
     height: 60px;
-    padding: 12px 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: #FFFFFF;
     background-color: #82B3D3;;
     font-weight: 700;
@@ -906,10 +932,6 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.pagination-link:last-of-type {
-    padding: 12px 18.5px;
 }
 
 .pagination-first {
