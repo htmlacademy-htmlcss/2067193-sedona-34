@@ -131,16 +131,18 @@
                 <input class="departure-date-input" type="date" id="departure-date" placeholder="1 сентября 2021">
                 <p class="departure-description">На эти даты есть свободные номера. Пока есть.</p>
               </p>
-              <p class="find-hotel-form-date">
+              <p class="find-hotel-form-adult">
                 <label for="adults">
                   <h4 class="arrival-date">Взрослые</h4>
                 </label>
                 <input class="departure-date-input" type="number" id="adults" placeholder="2">
               </p>
-              <p class="find-hotel-form-date">
+              <p class="find-hotel-form-children">
                 <label for="children">
                   <h4 class="arrival-date">Дети</h4>
-                  <p class="arrival-date-descriotion">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                  <button class="info">
+                    <span class="visually-hidden arrival-date-descriotion">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </button>
                 </label>
                 <input type="number" id="children" placeholder="1">
               </p>                    
@@ -156,9 +158,20 @@
       <section class="newsletter">
        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
         <p class="page-footer-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form 
+        class="newsletter-form" 
+        action="https://echo.htmlacademy.ru/" 
+        method="post"
+        >
           <label for="newsletter-email"> Ваш e-mail</label>
-          <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <input 
+          class="field" 
+          type="email" 
+          name="newsletter-email"
+          placeholder="Ваш e-mail"  
+          id="newsletter-email" 
+          required
+          >
             <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
       </section>
