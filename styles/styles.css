@@ -206,14 +206,15 @@ body {
 }
 
 .main-picture-sedona::after {
-    width: 1200px;
+    /*width: 1200px;
     height: 57px;
-    position: relative;
+    /*position: relative;*/
     background-image: url("../images/decor/decor.svg");
-    bottom: -5px;
+    /*bottom: -5px;
     left: 0;
     background-repeat: no-repeat;
-    background-size: contain;
+    /*background-size: contain;*/
+    fill: #FFFFFF;
 }
 
 /* Преимущества */
