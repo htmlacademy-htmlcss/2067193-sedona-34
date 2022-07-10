@@ -72,6 +72,7 @@ body {
     margin-left: 70px;
     margin-bottom: -5px;
     width: 139px;
+    z-index: 1;
 }
 
 .navigation {
@@ -258,11 +259,12 @@ body {
 }
 
 .advantages-title {
+    margin: 0px;
+    padding: 0px;
+    max-width: 230px;
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
-    margin: 0px;
-    padding: 0px;
 }
 
 .advantages-image {
@@ -356,11 +358,21 @@ body {
 
 /* Форма поиска*/
 .find-page {
-    background-color: #ffffff;
-    color: #000000;
-    border-radius: 30px;
-    margin: 0px auto;
+    width: 715px;
+}
+
+.find-page-container {
+    margin: 0px;
     padding-top: 62px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    width: 715px;
+    background-color: #e5e5e5; /*временно, нужен белый!!!*/
+    color: #000000;
+    border: 0px solid;
+    box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
 }
 
 .find-hotel-title {
@@ -368,19 +380,40 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+}
+/*
+.find-hotel-form {
+    display: grid;
+    grid-template-columns: 288px 230px;
+    gap: 40px 56px;
+}*/
+/* Дата заезда/выезда */
+.find-hotel-form-date {
+    display: flex;
+    grid-column: 1/-1;
+    width: 575px;
+    margin: 0px;
+    padding: 0px;
 }
 
-.find-hotel-form {
-    
+.find-hotel-form-adult {
+    width: 288px;
 }
-/* Дата заезда*/
+
+.find-hotel-form-children {
+    width: 230px;
+}
+
 .arrival-date {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     align-items: center;
     text-transform: capitalize;
-    margin-top: 75px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .departure-date-input {
@@ -391,17 +424,24 @@ body {
 }
 
 .departure-description {
+    grid-column: 1 / -1;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     align-items: center;
     color: #333333;
+    margin: 0px;
+    padding: 0px;
 }
 
 .departure-description.red {
     color: #FF5757;
 }
-
+.info {
+    width: 25px;
+    height: 25px;
+    background-color: #83B3D3;
+}
 .arrival-date-descriotion {
     font-weight: 400;
     font-size: 16px;
@@ -415,6 +455,8 @@ body {
 }
 
 .button-search {
+    grid-column: 1 / -1;
+    justify-self: start;
     width: 575px;
     height: 60px;
     background: #83B3D3;
@@ -751,41 +793,49 @@ body {
 /*Список гостиниц*/
 .index-columns {
     background-color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
     width: 1200px;
-    margin: 0px auto;
+    margin: 0px;
 }
 
 .hotel-list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding: 0px;
-    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    align-content: start;
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    gap: 18px;
+    margin-bottom: 96px;
+    margin-left: 73px;
 }
 
 .holel-card {
-    list-style-type: none;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #ffffff;
+    display: flex;
     flex-direction: column;
-    width: 340px;
-    min-height: 438px;
 }
 
-.holel-card-link {
+.hotel-card-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 16px;
+}
+
+.holel-card-title-link {
     text-decoration: none;
+    grid-column: 1/-1;
 }
 
 /*Изображения гостиниц*/
 .holel-card-image {
-    padding-left: 20px;
-    padding-top: 20px;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     display: block;
     max-width: 100%;
 }
@@ -794,6 +844,8 @@ body {
     font-weight: 700;
     font-size: 24px;
     color: #000000;
+    margin: 0px;
+    padding: 0px;
 }
 /*Гостиница*/
 .holel-card-text {
@@ -801,6 +853,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+    margin: 0px;
+    padding: 0px;
 }
 /*От .... ₽*/
 .holel-card-price {
@@ -808,7 +862,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #333333;
-
+    margin: 0px;
+    padding: 0px;
 }
 /*Подробнее*/
 .holel-card-button {
@@ -830,21 +885,19 @@ body {
     text-decoration: none;
 }
 /*в избранное*/
-.apply-button {
-    /*margin: 180px 328px;*/
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
+.favorite-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
     width: 140px;
     height: 37px;
     background: #82B3D3;
-    padding-top: 9px;
-    /*padding-left: 15px;
-    padding-right: 15px;*/
-    padding-bottom: 8px;
-    /*display: flex;*/
-    align-items: center;
-    text-align: center;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
     color: #FFFFFF;
     border-radius: 4px;
@@ -854,12 +907,20 @@ body {
 
 /*Рейтинг*/
 .holel-card-star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 140px;
+    height: 37px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    text-align: center;
     text-transform: uppercase;
     color: #333333;
+    background-color: #F2F2F2;
+    border-radius: 4px;
 }
 
 /*Страницы результатов поиска*/
@@ -886,6 +947,7 @@ body {
     list-style-type: none;
 }
 .pagination-item {
+    
 }
 
 .pagination-item:not(:last-child) {
@@ -894,10 +956,13 @@ body {
   
 .pagination-link {
     display: block;
+    text-align: center;
+    align-items: center;
     box-sizing: border-box;
     width: 60px;
     height: 60px;
-    padding: 12px 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     color: #FFFFFF;
     background-color: #82B3D3;;
     font-weight: 700;
@@ -905,10 +970,6 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     text-decoration: none;
-}
-
-.pagination-link:last-of-type {
-    padding: 12px 18.5px;
 }
 
 .pagination-first {
