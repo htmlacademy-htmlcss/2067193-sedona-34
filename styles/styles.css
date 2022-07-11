@@ -142,6 +142,7 @@ body {
   
   .navigation-user {
     max-width: 300px;
+    margin-left: 51px;
     justify-content: flex-end;
     padding: 10px 0;
   }
@@ -179,6 +180,10 @@ body {
 }
 
 .navigation-button {
+    margin: 0;
+    width: 160px;
+    margin-left: 20px;
+    padding: 9px 15px;
     text-align: center;
     color: #ffffff;
     background-color: #756157;
@@ -187,11 +192,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    padding: 9px 15px;
     border-radius: 4px;
-    margin: 0;
-    width: 160px;
-    margin-left: 20px;
 }
 
 .main-container {
@@ -223,6 +224,22 @@ body {
     color: #000000;
 }
 
+/* декоративное изображение */
+.main-picture::after {
+    display: block;
+    width: 1200px;
+    height: 57px;
+    position: relative;
+    background-image: url("../images/decor/decor.svg");
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    content: "";
+}   
+
 .main-picture-welcome {
     display: block;
     margin: 0 auto;
@@ -241,18 +258,6 @@ body {
     margin: 0 auto;
     margin-top: 54px;
     max-width: 100%;
-}
-
-.main-picture-sedona::after {
-    width: 1200px;
-    height: 57px;
-    position: relative;
-    background-image: url("../images/decor/decor.svg");
-    bottom: -5px;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #FFFFFF;
 }
 
 /* Преимущества */
@@ -300,22 +305,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 400px;
+    flex: 1;
     height: 384px;
 }
 
-.advantage-item.house::before {
+.advantages-item.house::before {
+    width: 75px;
+    height: 72px;
+    margin: 0px;
+    top: 80px;
     background-image: url("../images/decor/house.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     content: "";
-    width: 75px;
-    height: 72px;
-  }
+}
 
 .real-city {
-    flex-grow: 400px;
+    flex-grow: 1;
 }
 
 .advantages-title {
