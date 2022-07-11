@@ -125,15 +125,16 @@
           method="post"
           >
             <div class="subscribe">
-            <label for="newsletter-email"> Ваш e-mail</label>
-            <input 
-            class="field" 
-            type="email" 
-            name="newsletter-email"
-            placeholder="Ваш e-mail"  
-            id="newsletter-email" 
-            required
-            >
+              <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+              <input 
+              class="field" 
+              type="email" 
+              name="newsletter-email"
+              placeholder="Ваш e-mail"  
+              id="newsletter-email"
+              aria-label="Введите ваш email-адрес"
+              required
+              >
             </div>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>

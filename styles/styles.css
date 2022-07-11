@@ -452,13 +452,6 @@ body {
     color: #FFFFFF;
 }
 /*Форма email*/
-.newsletter-form {
-    display: flex;
-    justify-content: center;
-    margin: 0px auto;
-    margin-top: 46px;
-}
-
 .subscribe {
     display: flex;
     justify-content: center;
@@ -476,8 +469,32 @@ body {
     justify-content: center;
     align-items: center;
     color: #000000;
-    /*padding-top: 20px;
-    padding-left: 22px;*/
+    flex-grow: 1;
+    margin: 0;
+}
+  
+.newsletter-email .field {
+    width: 600px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+    margin-top: 46px;
+}
+
+.field {
+    width: 600px;
+    background: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border: 0px;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    opacity: 0.6;
 }
 
 /*Подписаться*/

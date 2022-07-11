@@ -244,15 +244,31 @@
           </section>
         </div>
       </main>
+      <!-- Подвал -->
       <footer class="page-footer">
+        <!-- Подписка -->
         <section class="newsletter-catalog">
             <h2 class="page-footer-title footer-title-catalog">Подпишитесь на рассылку</h2>
             <p class="page-footer-description footer-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email"> Ваш e-mail</label>
-              <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="button newsletter-button" type="submit">Подписаться</button>
-            </form>
+            <form 
+            class="newsletter-form" 
+            action="https://echo.htmlacademy.ru/" 
+            method="post"
+            >
+              <div class="subscribe">
+                <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+                <input 
+                class="field" 
+                type="email" 
+                name="newsletter-email"
+                placeholder="Ваш e-mail"  
+                id="newsletter-email"
+                aria-label="Введите ваш email-адрес"
+                required
+                >
+              </div>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
+          </form>
         </section>
         <div class="page-footer-container">
           <section class="footer-social">
