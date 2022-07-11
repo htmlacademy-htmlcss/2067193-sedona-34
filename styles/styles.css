@@ -637,7 +637,7 @@ body {
 }
 /* Открытие/скрытие модального окна*/
 .modal-container-close {
-    display: none;
+    /*display: none;*/
 }
 
 /* Форма поиска */
@@ -720,6 +720,11 @@ body {
     font-weight: 700;
     font-size: 20px;
     align-self: center;
+}
+
+.arrival-date-h4 {
+    margin: 0px;
+    padding: 0px;
 }
 /*Поле с датой и календарем*/
 .field-modal {
@@ -836,7 +841,7 @@ body {
 }
 
 .button-minus {
-    top: 11px;
+    top: 10px;
     left: 14px;
 }
 
@@ -910,10 +915,60 @@ body {
     opacity: 30%;
 }
 
-/* Раздел 9, тултип */
+/* Тултип */
+.tooltip {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
 
+.tooltip-toggle {
+    border: none;
+    margin: 2px 0 0 1px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #83b3d3;
+    cursor: help;
+}
 
+.tooltip-text {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 256px;
+    margin-top: 16px;
+    right: 30%;
+    padding: 15px 18px 18px 22px;
+    border-radius: 10px;
+    transform: translateX(50%);
+    z-index: 1;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+  
+.tooltip-text::before {
+    content: "";
+    background-image: url("../images/decor/triangle-black.svg");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 9px;
+    position: absolute;
+    top: -9px;
+    right: 119px;
+}
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
 
 
 /* Каталог */
