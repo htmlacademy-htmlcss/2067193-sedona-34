@@ -403,7 +403,7 @@ body {
     margin-top: 29px;
 }
 
-.button-find {
+.button-search-hotel {
     margin-top: 56px;
     margin-bottom: 93px;
     width: 574px;
@@ -442,6 +442,7 @@ body {
 }
 
 .page-footer-title {
+    margin: 0px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
