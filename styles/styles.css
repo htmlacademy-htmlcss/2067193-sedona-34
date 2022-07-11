@@ -83,6 +83,7 @@ body {
     margin-bottom: -5px;
     width: 139px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .navigation {
@@ -182,6 +183,7 @@ body {
 .navigation-button {
     margin: 0;
     width: 160px;
+    box-sizing: border-box;
     margin-left: 20px;
     padding: 9px 15px;
     text-align: center;
@@ -548,17 +550,26 @@ body {
 }
 
 .footer-social-item {
-    list-style-type: none;
-    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 47px;
     height: 40px;
 }
 
-.icon-social {
-    max-width: 100%;
-    display: block;
-    margin: 0;
+.footer-social-link:hover svg {
+    fill: #68a2ca;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
+  
+.footer-social-link:focus svg {
+    fill: #68a2ca;
+}
+  
+.footer-social-link:active svg {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-contacts {
     display: flex;
     width: 331px;
@@ -578,12 +589,40 @@ body {
     color: #000000;
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
+}
+
+.footer-contacts-phone:hover {
+    color: #756157;
+}
+  
+.footer-contacts-phone:focus {
+    color: #756157;
+}
+  
+.footer-contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-contacts-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 70px;
-    margin-top: 49px;
     width: 115px;
+    margin-top: 4px;
+}
+
+.htmlacademy-link:hover svg {
+    fill: #756157;
+}
+  
+.htmlacadey-link:focus svg {
+    fill: #756157;
+}
+  
+.htmlacadey-link:active svg {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Модальное окно */
