@@ -166,6 +166,7 @@ body {
   
   .navigation-link-favorite::after {
     content: "12";
+    box-sizing: border-box;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
@@ -637,7 +638,7 @@ body {
 }
 /* Открытие/скрытие модального окна*/
 .modal-container-close {
-    /*display: none;*/
+    display: none;
 }
 
 /* Форма поиска */
