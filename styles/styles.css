@@ -573,7 +573,7 @@ body {
 }
 /* Открытие/скрытие модального окна*/
 .modal-container-close {
-    /*display: none;*/
+    display: none;
 }
 
 /* Форма поиска */
@@ -876,21 +876,54 @@ body {
     margin: 0px;
     margin-bottom: 10px;
 }
-/*Гостиницы*/
+/*Хлебные крошки - Гостиницы*/
 .main-page {
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    list-style-type: none;
 }
 
+.main-page-item {
+    position: relative;
+    margin-right: 25px;
+}
 .main-page-link {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 40px;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
+
+.main-page-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon:hover {
+    fill: rgba(255, 255, 255, 0.6);
+}
+
+.main-page-item::after {
+    width: 5px;
+    height: 8px;
+    top: 6px;
+    right: -15px;
+    background-image: url(../images/decor/breadcrubs-item.svg);
+    background-repeat: no-repeat;
+    background-size: 5px 8px;
+    position: absolute;
+    content: "";
+}
+
+.main-page-item:last-child::after {
+    content: none;
+}
+
 /*Каталог фильтр заголовки */
 /*Инфрастурктура, тип жилья, стоимость*/
 .catalog-products {
