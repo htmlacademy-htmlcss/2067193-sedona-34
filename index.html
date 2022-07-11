@@ -170,6 +170,7 @@
           </section>
         </div>
       </footer>
+      <!-- Модальное окно, отключено в стилях-->
       <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button" aria-label="Закрыть">
@@ -181,7 +182,8 @@
               class="find-hotel-form" 
               action="https://echo.htmlacademy.ru/" 
               method="post">
-              <div class="find-hotel-form-date">
+              <!--right или wrong, для включения примечания для find-hotel-form-date-->
+              <div class="find-hotel-form-date wrong">
                 <label class="label-input" for="arrival-date">
                   <h4 class="arrival-date-h4">Дата Заезда:</h4>
                 </label>
@@ -199,11 +201,12 @@
                     type="button"
                     aria-label="Посмотреть доступные даты"
                   ></button>
-                  <span class="massage error">Мы не можем отправить вас в прошлое</span>
-                  <span class="massage vin">На эти даты есть свободные номера. Пока есть.</span>
+                  <span class="massage-error">Мы не можем отправить вас в прошлое</span>
+                  <span class="massage-vin">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
               </div>
-              <div class="find-hotel-form-date">
+              <!--right или wrong, для включения примечания для find-hotel-form-date-->
+              <div class="find-hotel-form-date right">
                 <label class="label-input" for="departure-date">
                   <h4 class="arrival-date-h4">Дата Выезда:</h4>
                 </label>
@@ -221,10 +224,11 @@
                     type="button"
                     aria-label="Посмотреть доступные даты"
                   ></button>
-                  <span class="massage error">Мы не можем отправить вас в прошлое</span>
-                  <span class="massage vin">На эти даты есть свободные номера. Пока есть.</span>
+                  <span class="massage-error">Мы не можем отправить вас в прошлое</span>
+                  <span class="massage-vin">На эти даты есть свободные номера. Пока есть.</span>
                 </div>
               </div>
+              <!--Взрослые-->
               <div class="find-hotel-form-people">
                 <div class="people">
                   <label class="label-input" for="adult">Взрослые:</label>
@@ -250,6 +254,7 @@
                     ></button>
                   </div>
                 </div>
+                <!--Дети-->
                 <div class="people">
                   <span class="label-input">
                     <label class="label-input" for="children">Дети:</label>
@@ -269,12 +274,12 @@
                       <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </span>
-                  <div class="button-children">
+                  <div class="button-adults">
                     <input
                       class="people-field field-modal"
                       type="text"
-                      id="child"
-                      name="child"
+                      id="children"
+                      name="children"
                       placeholder="1"
                       maxlength="1"
                     />
@@ -291,7 +296,7 @@
                   </div>
                 </div>
               </div>
-              <button class="button-blue button-submit" type="submit">
+              <button class="button-blue button-find type="submit">
                 Найти
               </button>
             </form>
