@@ -312,12 +312,33 @@ body {
     height: 384px;
 }
 
-.advantages-item.house::before {
+.house {
     width: 75px;
     height: 72px;
-    margin: 0px;
-    top: 80px;
+    margin-bottom: 30px;
     background-image: url("../images/decor/house.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    content: "";
+}
+
+.food {
+    width: 74px;
+    height: 70px;
+    margin-bottom: 30px;
+    background-image: url("../images/decor/food.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    content: "";
+}
+
+.souvenirs {
+    width: 64px;
+    height: 76px;
+    margin-bottom: 30px;
+    background-image: url("../images/decor/souvenirs.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -523,6 +544,9 @@ body {
     border-bottom-right-radius: 10px;
     border-width: 0px;
     color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
 }
 
 .page-footer-container {
@@ -618,11 +642,11 @@ body {
     fill: #756157;
 }
   
-.htmlacadey-link:focus svg {
+.htmlacademy-link:focus svg {
     fill: #756157;
 }
   
-.htmlacadey-link:active svg {
+.htmlacademy-link:active svg {
     fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -986,6 +1010,8 @@ body {
     color: #FFFFFF;
     padding-top: 35px;
     padding-left: 70px;
+    padding-bottom: 70px;
+    padding-right: 70px;
 }
 
 /* Главный заголовок */
@@ -1026,6 +1052,7 @@ body {
 
 .breadcrumbs-icon:hover {
     fill: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
 }
 
 .main-page-item::after {
@@ -1048,7 +1075,8 @@ body {
 /*Инфрастурктура, тип жилья, стоимость*/
 .infrastructure {
     display: flex;
-    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
 }
 
 .catalog-left-column {
@@ -1056,6 +1084,9 @@ body {
     flex-wrap: wrap;
     width: 366px;
     justify-content: space-between;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
   }
 
 .catalog-filter-group {
@@ -1063,6 +1094,12 @@ body {
     margin: 0;
     padding: 0;
     width: 151px;
+}
+
+.catalog-filter-title {
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 .catalog-filter-h4 {
@@ -1081,11 +1118,255 @@ body {
 }
 
 .catalog-filter-item {
-
+    margin: 0px;
+    padding: 0px;
+    padding-left: 39px;
 }
   
 /*Инфраструктура стили для фильтров*/
+.control {
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
 
+.control-mark {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 4px;
+    left: 0;
+}
+
+.control-input {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+
+.control:hover .control-mark {
+    background: rgba(255, 255, 255, 0.6);
+}
+  
+.control:active .control-mark {
+    background: rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0 7px 15px rgba(0, 0, 0, 0.4));
+    box-shadow: 0 0 0 2px #82B3D3;
+}
+  
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+  
+.control-input[type="checkbox"]:checked + .control-mark::before {
+    position: absolute;
+    content: "";
+    background-image: url("../images/decor/checkmark.svg");
+    background-repeat: no-repeat;
+    top: 5px;
+    left: 4px;
+    width: 12px;
+    height: 10px;
+}
+  
+.control-input[type="checkbox"]:focus + .control-mark {
+    box-shadow: 0 0 0 3px #82B3D3;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+.control-input[type="checkbox"]:disabled + .control-mark {
+    background: rgba(255, 255, 255, 0.1);
+}
+  
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+  
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #3f5e72;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+  
+.control-input[type="radio"]:focus + .control-mark {
+    box-shadow: 0 0 0 3px #82B3D3;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+  
+.control-input[type="radio"]:disabled + .control-mark {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Стоимость */
+.catalog-right-column {
+    display: flex;
+    flex-wrap: wrap;
+    width: 519px;
+    justify-content: space-between;
+    margin: 0px;
+    margin-top: 40px;
+    margin-left: 175px;
+    padding: 0px;
+}
+
+.catalog-right-filter-group {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 288px;
+}
+
+.filter-group-price {
+
+}
+
+.catalog-right-title {
+    margin-bottom: 34px;
+}
+
+.wrap-input {
+    display: flex;
+}
+
+.control-priсe {
+    position: relative;
+    width: 144px;
+}
+
+.control-input-right {
+    width: 144px;
+    height: 48px;
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 21px;
+    box-sizing: border-box;
+}
+
+.control-input-right:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input-right:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+    outline: none;
+}
+
+.control-input-right:active {
+    box-shadow: none;
+    background-color: #756257;
+}
+
+.min-price {
+    border-radius: 4px 0 0 4px;
+    margin-right: -1px;
+    width: 144px;
+}
+
+.max-price {
+    border-radius: 0 4px 4px 0;
+    margin-left: -1px;
+    width: 144px;
+}
+
+.price {
+
+}
+
+/* Range */
+.range {
+    display: flex;
+}
+
+.range-scale {
+    position: relative;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+  
+.range-toggle:focus {
+    box-shadow: 0 0 0 3px #83B3D3;
+    outline: none;
+}
+  
+  .range-toggle:active {
+    box-shadow: 0 0 0 2px #83B3D3;
+}
+
+.toggle-min {
+    top: -8px;
+    left: 0;
+}
+
+.toggle-max {
+    top: -8px;
+    right: -10px;
+}
+
+.apply-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 160px;
+    height: 48px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: #82B3D3;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.clean-button {
+    width: 160px;
+    border: none;
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: transparent;
+    font-weight: 400;
+    text-transform: none;
+
+}
 /* Результаты поиска */
 .inner-section {
     background-color: #FFFFFF;
@@ -1113,6 +1394,8 @@ body {
     margin: 0;
     margin-left: 72px;
     text-transform: uppercase;
+    align-items: center;
+    display: flex;
 }
 /*Сортировка*/
 .sorting-container {
@@ -1121,19 +1404,44 @@ body {
     background-color: #ffffff;
 }
 
-.select-control{
+.select-control {
     width: 290px;
     height: 49px;
     margin: 0px;
-    margin-left: 191px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     background-color: #ffffff;
+    appearance: none;
+    padding: 11px 19px;
+    background-image: url("../images/decor/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-position: right 18px center;
 }
 
+/*Сортировка - состояния */
+.select-control:hover {
+    border-color: #68a2ca;
+}
+
+.select-control:focus {
+    border: 1px solid #68a2ca;
+    border-color: #68a2ca;
+}
+
+.select-control:active {
+    border: 1px solid #3f5e72;
+    border-color: #3f5e72;
+}
+
+.select-control:disabled {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* Вариация показов*/
 .button-watching {
     width: 48px;
     height: 48px;
