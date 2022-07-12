@@ -66,13 +66,34 @@
                       </legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
-                          <label class="control"><input class="control-input" type="checkbox" name="infrastructure" checked value="swimmingpool">Бассейн</label>
+                          <label class="control">
+                            <input 
+                            class="visually-hidden control-input" 
+                            type="checkbox" 
+                            name="infrastructure" 
+                            value="swimmingpool" 
+                            checked>
+                            Бассейн
+                          </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label class="control"><input class="control-input" type="checkbox" name="infrastructure" checked value="parking">Парковка</label>
+                          <label class="control">
+                            <input class="visually-hidden control-input" 
+                            type="checkbox" 
+                            name="infrastructure" 
+                            value="parking" 
+                            checked>
+                            Парковка
+                          </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <label class="control"><input class="control-input" type="checkbox" name="infrastructure" value="wifi">Wi-Fi</label>
+                          <label class="control">
+                            <input class="visually-hidden control-input" 
+                            type="checkbox" 
+                            name="infrastructure" 
+                            value="wifi">
+                            Wi-Fi
+                          </label>
                         </li>
                       </ul>
                     </fieldset>
@@ -94,15 +115,40 @@
                     </fieldset>
                 </div>
                 <div class="catalog-right-column">
-                  <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">
-                      <h4 class="catalog-filter-h4">Стоимость, <span>₽</span>:</h4>
+                  <fieldset class="catalog-right-filter-group filter-group-price">
+                    <legend class="catalog-right-title">
+                      <h4 class="catalog-filter-h4">Стоимость, ₽:</h4>
                     </legend>
-                    <label class="control control-prise">от<input сlass="control-input" type="text" value="0"></label>
-                    <label class="control control-prise">до<input сlass="control-input" type="text" value="9000"></label>
+                    <div class="wrap-input">
+                      <label class="control control-priсe" aria-label="Минимальная цена">
+                        <input сlass="control-input-right min-price" type="text" placeholder="0">
+                        <span class="price">от</span>
+                      </label>
+                      <label class="control control-priсe" aria-label="Максимальная цена">
+                          <input сlass="control-input-right" type="text" placeholder="9000">
+                          <span class="price">до</span>
+                      </label>
+                    </div>
+                    <div class="range">
+                      <div class="range-scale">
+                        <div class="range-bar" style="width: 228px; left: 0">
+                          <button 
+                            type="button"
+                            class="range-toggle toggle-min"
+                            aria-label="Выбрать минимальную цену">
+                          </button>
+                          <button
+                              type="button"
+                              class="range-toggle toggle-max"
+                              aria-label="Выставить максимальную цену">
+                            </button>
+                      </div>
+                    </div>
                   </fieldset>
-                  <button class="button apply-button" type="sumbit" name="apply-button">Применить</button>
-                  <button class="button clean-button" type="reset" name="clean-button">Сбросить</button>
+                  <div class="apply-filter">
+                    <button class="button apply-button" type="sumbit" name="apply-button">Применить</button>
+                    <button class="button clean-button" type="reset" name="clean-button">Сбросить</button>
+                  </div>
                 </div>
               </form>
             </section>
