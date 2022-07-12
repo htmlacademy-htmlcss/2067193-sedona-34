@@ -83,6 +83,7 @@ body {
     margin-bottom: -5px;
     width: 139px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .navigation {
@@ -142,6 +143,7 @@ body {
   
   .navigation-user {
     max-width: 300px;
+    margin-left: 51px;
     justify-content: flex-end;
     padding: 10px 0;
   }
@@ -164,6 +166,7 @@ body {
   
   .navigation-link-favorite::after {
     content: "12";
+    box-sizing: border-box;
     font-weight: 400;
     font-size: 10px;
     line-height: 13px;
@@ -179,6 +182,11 @@ body {
 }
 
 .navigation-button {
+    margin: 0;
+    width: 160px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    padding: 9px 15px;
     text-align: center;
     color: #ffffff;
     background-color: #756157;
@@ -187,11 +195,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    padding: 9px 15px;
     border-radius: 4px;
-    margin: 0;
-    width: 160px;
-    margin-left: 20px;
 }
 
 .main-container {
@@ -223,6 +227,22 @@ body {
     color: #000000;
 }
 
+/* декоративное изображение */
+.main-picture::after {
+    display: block;
+    width: 1200px;
+    height: 57px;
+    position: relative;
+    background-image: url("../images/decor/decor.svg");
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    content: "";
+}   
+
 .main-picture-welcome {
     display: block;
     margin: 0 auto;
@@ -241,18 +261,6 @@ body {
     margin: 0 auto;
     margin-top: 54px;
     max-width: 100%;
-}
-
-.main-picture-sedona::after {
-    width: 1200px;
-    height: 57px;
-    position: relative;
-    background-image: url("../images/decor/decor.svg");
-    bottom: -5px;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: contain;
-    color: #FFFFFF;
 }
 
 /* Преимущества */
@@ -300,22 +308,24 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 400px;
+    flex: 1;
     height: 384px;
 }
 
-.advantage-item.house::before {
+.advantages-item.house::before {
+    width: 75px;
+    height: 72px;
+    margin: 0px;
+    top: 80px;
     background-image: url("../images/decor/house.svg");
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
     content: "";
-    width: 75px;
-    height: 72px;
-  }
+}
 
 .real-city {
-    flex-grow: 400px;
+    flex-grow: 1;
 }
 
 .advantages-title {
@@ -396,7 +406,7 @@ body {
     margin-top: 29px;
 }
 
-.button-find {
+.button-search-hotel {
     margin-top: 56px;
     margin-bottom: 93px;
     width: 574px;
@@ -435,6 +445,7 @@ body {
 }
 
 .page-footer-title {
+    margin: 0px;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
@@ -540,17 +551,26 @@ body {
 }
 
 .footer-social-item {
-    list-style-type: none;
-    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 47px;
     height: 40px;
 }
 
-.icon-social {
-    max-width: 100%;
-    display: block;
-    margin: 0;
+.footer-social-link:hover svg {
+    fill: #68a2ca;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
+  
+.footer-social-link:focus svg {
+    fill: #68a2ca;
+}
+  
+.footer-social-link:active svg {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-contacts {
     display: flex;
     width: 331px;
@@ -570,12 +590,40 @@ body {
     color: #000000;
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
+}
+
+.footer-contacts-phone:hover {
+    color: #756157;
+}
+  
+.footer-contacts-phone:focus {
+    color: #756157;
+}
+  
+.footer-contacts-phone:active {
+    color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-contacts-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 70px;
-    margin-top: 49px;
     width: 115px;
+    margin-top: 4px;
+}
+
+.htmlacademy-link:hover svg {
+    fill: #756157;
+}
+  
+.htmlacadey-link:focus svg {
+    fill: #756157;
+}
+  
+.htmlacadey-link:active svg {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 /* Модальное окно */
@@ -673,6 +721,11 @@ body {
     font-weight: 700;
     font-size: 20px;
     align-self: center;
+}
+
+.arrival-date-h4 {
+    margin: 0px;
+    padding: 0px;
 }
 /*Поле с датой и календарем*/
 .field-modal {
@@ -789,7 +842,7 @@ body {
 }
 
 .button-minus {
-    top: 11px;
+    top: 10px;
     left: 14px;
 }
 
@@ -863,10 +916,60 @@ body {
     opacity: 30%;
 }
 
-/* Раздел 9, тултип */
+/* Тултип */
+.tooltip {
+    position: absolute;
+    margin-top: -3px;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+}
 
+.tooltip-toggle {
+    border: none;
+    margin: 2px 0 0 1px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #83b3d3;
+    cursor: help;
+}
 
+.tooltip-text {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 256px;
+    margin-top: 16px;
+    right: 30%;
+    padding: 15px 18px 18px 22px;
+    border-radius: 10px;
+    transform: translateX(50%);
+    z-index: 1;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+  
+.tooltip-text::before {
+    content: "";
+    background-image: url("../images/decor/triangle-black.svg");
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 9px;
+    position: absolute;
+    top: -9px;
+    right: 119px;
+}
 
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
 
 
 /* Каталог */
