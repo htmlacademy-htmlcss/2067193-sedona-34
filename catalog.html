@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
     <title>Каталог</title>
   </head>
   <body>
@@ -64,7 +64,7 @@
                 <div class="catalog-left-column">
                   <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">
-                      <h4 class="catalog-filter-h4">Инфраструктура:</h4>
+                      <span class="catalog-filter-h4">Инфраструктура:</h4>
                       </legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -103,7 +103,7 @@
                     </fieldset>
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">
-                        <h4 class="catalog-filter-h4">Тип Жилья:</h4>
+                        <span class="catalog-filter-h4">Тип Жилья:</h4>
                       </legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -142,7 +142,7 @@
                 <div class="catalog-right-column">
                   <fieldset class="catalog-right-filter-group">
                     <legend class="catalog-right-title">
-                      <h4 class="catalog-filter-h4">Стоимость, ₽:</h4>
+                      <span class="catalog-filter-h4">Стоимость, ₽:</h4>
                     </legend>
                     <div class="wrap-input">
                       <label class="control-priсe-min" aria-label="Минимальная цена">
@@ -176,7 +176,8 @@
                               type="button"
                               class="range-toggle toggle-max"
                               aria-label="Выбрать максимальную цену">
-                            </button>
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </fieldset>
@@ -403,8 +404,8 @@
                   <svg 
                   width="25" 
                   height="14" 
-                  alt="ВКонтакте" 
-                  title="ВКонтакте"
+                  aria-hidden="true"
+                  focusable="false"
                   fill="none" 
                   xmlns="http://www.w3.org/2000/svg"
                   >
@@ -419,7 +420,6 @@
                   height="16"
                   aria-hidden="true"
                   focusable="false"
-                  title="Telegram" 
                   fill="none" 
                   xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.79.1.84 6.25c-1.09.43-1.08 1.04-.2 1.31l4.1 1.28 9.47-5.98c.44-.27.85-.12.52.18L7.05 9.96l-.28 4.22c.41 0 .6-.19.83-.41l1.99-1.93 4.13 3.05c.77.42 1.31.2 1.5-.7l2.72-12.8c.28-1.12-.43-1.62-1.16-1.3Z" fill="#83B3D3"/>
@@ -433,7 +433,6 @@
                   height="18" 
                   aria-hidden="true"
                   focusable="false" 
-                  title="YouTube"
                   fill="none" 
                   xmlns="http://www.w3.org/2000/svg"
                   >
