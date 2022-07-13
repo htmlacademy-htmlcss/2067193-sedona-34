@@ -73,9 +73,7 @@ body {
             flex-direction: column;
     min-height: 100vh;
     width: 1200px;
-    margin: 0;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0 auto;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -1277,7 +1275,7 @@ body {
 }
 
 /*Каталог фильтр заголовки */
-/*Инфрастурктура, тип жилья, стоимость*/
+/*Инфрастурктура, тип жилья*/
 .infrastructure {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1292,7 +1290,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 366px;
+    width: 376px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1305,7 +1303,7 @@ body {
     border: none;
     margin: 0;
     padding: 0;
-    width: 151px;
+    /* width: 151px; */
 }
 
 .catalog-filter-title {
@@ -1332,7 +1330,6 @@ body {
 .catalog-filter-item {
     margin: 0px;
     padding: 0px;
-    padding-left: 39px;
 }
   
 /*Инфраструктура стили для фильтров*/
@@ -1423,9 +1420,15 @@ body {
     background: rgba(255, 255, 255, 0.1);
 }
 
-
-
-
+.control-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 39px;
+}
 
 /* Стоимость */
 .catalog-right-column {
@@ -1440,7 +1443,7 @@ body {
             justify-content: space-between;
     margin: 0px;
     margin-top: 40px;
-    margin-left: 175px;
+    margin-left: 165px;
     padding: 0px;
 }
 
@@ -1462,63 +1465,100 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin: 0px;
-    margin-bottom: 32px;
+    margin-bottom: 29px;
+    padding: 0px;
 }
 
-.control-priсe {
-    /* width: 144px; */
-    /* height: 48px; */
+.wrap-input input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 144px;
+    height: 48px;
+    margin: 0px;
+    margin-bottom: 32px;
+    padding-left: 19px;
+    background: transparent;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    }
+
+.control-priсe-min {
+    width: 144px;
+    height: 48px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'PT Sans';
+    font-style: normal;
+}
+
+.control-priсe-max {
+    width: 144px;
+    height: 48px;
+    border: 2px solid #ffffff;
+    background: transparent;
+    border-radius: 0 4px 4px 0;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'PT Sans';
+    font-style: normal;
 }
 
 .price {
-    /* position: absolute; */
+    position: relative;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    /* top: 14px;
-    right: 15px; */
+    top: -69px;
+    left: 107px;
     opacity: 0.3;
+    color: #ffffff;
 }
 
 .choose-price {
     margin: 0px;
     padding: 0px;
-    border: 2px solid #ffffff;
     background: transparent;
     color: #ffffff;
     font-size: 18px;
-    line-height: 21px;
-    width: 144px;
-    height: 48x;
+    line-height: 23px;
 }
 
-.choose-price:hover {
+.control-priсe-min:hover,
+.control-priсe-max:hover {
+    color: #FFFFFF;
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.choose-price:focus {
+.control-priсe-min:focus,
+.control-priсe-max:focus {
     border-color: #ffffff;
     -webkit-box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
             box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
     outline: none;
+    color: #FFFFFF;
 }
 
-.choose-price:active {
+.control-priсe-min:active,
+.control-priсe-max:active {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: #756257;
-}
-
-.min-price {
-    border-radius: 4px 0 0 4px;
-    margin: 0px;
-    padding: 0px;
-}
-
-.max-price {
-    border-radius: 0 4px 4px 0;
-    margin: 0px;
-    padding: 0px;
+    color: #FFFFFF;
 }
 
 /* Range */
