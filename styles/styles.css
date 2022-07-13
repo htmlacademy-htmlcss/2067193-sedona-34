@@ -73,7 +73,9 @@ body {
             flex-direction: column;
     min-height: 100vh;
     width: 1200px;
-    margin: 0 auto;
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
     -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
@@ -100,6 +102,7 @@ body {
 }
 
 .navigation {
+    margin-left: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,6 +122,7 @@ body {
             align-items: center;
     list-style-type: none;
     margin: 0;
+    margin-left: 17px;
     padding: 0;
     width: 570px;
   }
@@ -165,7 +169,7 @@ body {
   
   .navigation-user {
     max-width: 300px;
-    margin-left: 51px;
+    margin-left: 3px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -312,7 +316,7 @@ body {
 .advantages {
     background-color: #ffffff;
     text-align: center;
-    margin-top: 63px;
+    margin-top: -20px;
     margin-bottom: 90px;
 }
 
@@ -468,6 +472,7 @@ body {
 .search-hotel {
     background-color: #ffffff;
     margin: 0px auto;
+    text-align: center;
 }
 
 .search-hotel-title {
@@ -487,13 +492,17 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
-    margin: 0px auto;
+    margin: 0px;
     margin-top: 29px;
 }
 
 .button-search-hotel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 56px;
     margin-bottom: 93px;
+    margin-left: 313px;
     width: 574px;
     height: 60px;
     background-color: #756157;
@@ -742,11 +751,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 331px;
+    justify-content: center;
     text-align: center;
     margin: 0;
-    margin-top: 45px;
+    margin-top: 44px;
     margin-bottom: 35px;
+    margin-left: -43px;
 }
 
 .footer-contacts-phone {
@@ -786,7 +796,7 @@ body {
             align-items: center;
     margin-right: 70px;
     width: 115px;
-    margin-top: 4px;
+    margin-top: 10px;
 }
 
 .htmlacademy-link:hover svg {
@@ -1469,9 +1479,8 @@ body {
     right: 15px; */
     opacity: 0.3;
 }
-  
 
-.control-input-right {
+.choose-price {
     margin: 0px;
     padding: 0px;
     border: 2px solid #ffffff;
@@ -1480,21 +1489,21 @@ body {
     font-size: 18px;
     line-height: 21px;
     width: 144px;
-    height: 144px;
+    height: 48x;
 }
 
-.control-input-right:hover {
+.choose-price:hover {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-input-right:focus {
+.choose-price:focus {
     border-color: #ffffff;
     -webkit-box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
             box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
     outline: none;
 }
 
-.control-input-right:active {
+.choose-price:active {
     -webkit-box-shadow: none;
             box-shadow: none;
     background-color: #756257;
@@ -1785,9 +1794,11 @@ background: #E5E5E5;
 
 /*Список гостиниц*/
 .index-columns {
+    display: flex;
     background-color: #ffffff;
     width: 1200px;
     margin: 0px;
+    padding: 0px;
 }
 
 .hotel-list {
@@ -1801,8 +1812,8 @@ background: #E5E5E5;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    gap: 18px;
-    margin-bottom: 96px;
+    gap: 0px 18px;
+    margin-bottom: 59px;
     margin-left: 73px;
 }
 
@@ -1820,13 +1831,13 @@ background: #E5E5E5;
 .hotel-card-content {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 16px;
+    padding-top: 18px;
     padding-bottom: 20px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 16px 1fr;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 16px;
+    gap: 19px 16px;
 }
 
 .holel-card-title-link {
@@ -1982,6 +1993,7 @@ background: #E5E5E5;
     background-position: center;
     background-size: 18px 17px;
     height: 17px;
+    align-items: center;
 }
 
 .two-stars {
@@ -2029,6 +2041,19 @@ background: #E5E5E5;
     border-radius: 4px;
 }
 
+.line {
+    display: flex;
+    background-image: url("../images/decor/line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    width: 1060px;
+    height: 1px;
+    margin: 0px;
+    margin-left: 70px;
+    padding: 0px;
+}
+
 /*Страницы результатов поиска*/
 .pagination {
     display: -webkit-box;
@@ -2037,7 +2062,6 @@ background: #E5E5E5;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    
 }
 
 .pagination-container {
@@ -2057,9 +2081,6 @@ background: #E5E5E5;
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-.pagination-item {
-    
 }
 
 .pagination-item:not(:last-child) {
