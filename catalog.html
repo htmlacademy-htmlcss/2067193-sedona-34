@@ -12,7 +12,7 @@
       <header class="page-header">
         <!-- Логотип -->
         <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Вернуться на главную страницу">
+          <img class="page-header-logo" src="images/logo.svg" width="139" height="70" alt="Вернуться на главную страницу" role="img">
         </a>
         <nav class="navigation">
           <ul class="navigation-list">
@@ -141,17 +141,21 @@
                       <h4 class="catalog-filter-h4">Стоимость, ₽:</h4>
                     </legend>
                     <div class="wrap-input">
-                      <label class="control control-priсe" aria-label="Минимальная цена">
+                      <label class="control-priсe" aria-label="Минимальная цена">
                         <input 
                         сlass="control-input-right min-price" 
-                        type="text" 
+                        type="text"
+                        id="min-price"
+                        name="min-price"
                         placeholder="0">
                         <span class="price">от</span>
                       </label>
-                      <label class="control control-priсe" aria-label="Максимальная цена">
+                      <label class="control-priсe" aria-label="Максимальная цена">
                           <input 
                           сlass="control-input-right max-price" 
-                          type="text" 
+                          type="text"
+                          id="max-price"
+                          name="max-price" 
                           placeholder="9000">
                           <span class="price">до</span>
                       </label>
@@ -185,21 +189,57 @@
               <h2 class="inner-section-title">Найдено гостиниц: 38</h2>
               <!-- Сортировка -->
               <div class="sorting-container">
-                <select class="select-control" aria-label="Сортировка">
+                <select class="select-control sorting-type" aria-label="Сортировка">
                   <option value="popular">Сначала популярные</option>
                   <option value="cheap" checked>Сначала дешeвые</option>
                   <option value="expensive">Сначала дорогие</option>
                 </select>
                 <!-- Вариация показов -->
-                <a class="button-watching" href="#">
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
-                <a class="button-watching button-light" href="#">
-                  <span class="visually-hidden">Показать слайд-шоу</span>
-                </a>
-                <a class="button-watching button-light" href="#">
-                  <span class="visually-hidden">Показать список</span>
-                </a>
+                <div class="button-container">
+                  <a class="button-watching" href="#">
+                    <svg width="16" 
+                    height="14" 
+                    viewBox="0 0 16 14" 
+                    fill="none" 
+                    aria-hidden="true" 
+                    focusable="false" 
+                    xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 0H0V6H4V0Z" fill="black"/>
+                      <path d="M16 0H12V6H16V0Z" fill="black"/>
+                      <path d="M10 0H6V6H10V0Z" fill="black"/>
+                      <path d="M4 8H0V14H4V8Z" fill="black"/>
+                      <path d="M16 8H12V14H16V8Z" fill="black"/>
+                      <path d="M10 8H6V14H10V8Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Показать карточки</span>
+                  </a>
+                  <a class="button-watching button-light" href="#">
+                    <svg width="16" 
+                    height="14" 
+                    viewBox="0 0 16 14" 
+                    fill="none" 
+                    aria-hidden="true" 
+                    focusable="false"
+                    xmlns="http://www.w3.org/2000/svg">
+                      <path d="M16 12H0V14H16V12Z" fill="black"/>
+                      <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Показать слайд-шоу</span>
+                  </a>
+                  <a class="button-watching button-light" href="#">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 0H0V2H2V0Z" fill="black"/>
+                      <path d="M16 0H4V2H16V0Z" fill="black"/>
+                      <path d="M2 4H0V6H2V4Z" fill="black"/>
+                      <path d="M16 4H4V6H16V4Z" fill="black"/>
+                      <path d="M2 8H0V10H2V8Z" fill="black"/>
+                      <path d="M16 8H4V10H16V8Z" fill="black"/>
+                      <path d="M2 12H0V14H2V12Z" fill="black"/>
+                      <path d="M16 12H4V14H16V12Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Показать список</span>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="index-columns">
@@ -216,7 +256,8 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 4000 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="apply-button">в избранное</button>
+                    <button class="favorite-button" name="favorite-button">в избранное</button>
+                    <div class="hotel-star four-stars"></div>
                     <p class="holel-card-star">Рейтинг: 8,5</p>
                   </div>
                 </li>
@@ -231,7 +272,8 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 5000 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="apply-button">в избранном</button>
+                    <button class="favorite-button-second" name="favorite-button">в избранном</button>
+                    <div class="hotel-star four-stars"></div>
                     <p class="holel-card-star">Рейтинг: 9,2</p>
                   </div>
                 </li>
@@ -246,7 +288,8 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 2500 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="apply-button">в избранное</button>
+                    <button class="favorite-button" name="favorite-button">в избранное</button>
+                    <div class="hotel-star three-stars"></div>
                     <p class="holel-card-star">Рейтинг: 6,9</p>
                   </div>
                 </li>
@@ -261,7 +304,8 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 1500 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="apply-button">в избранное</button>
+                    <button class="favorite-button" name="favorite-button">в избранное</button>
+                    <div class="hotel-star two-stars"></div>
                     <p class="holel-card-star">Рейтинг: 5,0</p>
                   </div>
                 </li>
@@ -272,45 +316,46 @@
               <div class="pagination-container">
                 <ul class="pagination-list">
                   <li class="pagination-item">
-                    <a class="pagination-link pagination-first" href="#">1</a>
+                    <a class="pagination-link pagination-first" href="#" aria-label="Первая страница">1</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
+                    <a class="pagination-link" href="#" aria-label="Вторая страница">2</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
+                    <a class="pagination-link" href="#" aria-label="Третья страница">3</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">4</a>
+                    <a class="pagination-link" href="#" aria-label="Четвертая страница">4</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">5</a>
+                    <a class="pagination-link" href="#">...</a>
+                  </li>
+                  <li class="visually-hidden pagination-item">
+                    <a class="pagination-link" href="#" aria-label="Пятая страница">5</a>
+                  </li>
+                  <li class="visually-hidden pagination-item">
+                    <a class="pagination-link" href="#" aria-label="Шестая страница">6</a>
+                  </li>
+                  <li class="visually-hidden pagination-item">
+                    <a class="pagination-link" href="#" aria-label="Седьмая страница">7</a>
+                  </li>
+                  <li class="visually-hidden pagination-item">
+                    <a class="pagination-link" href="#" aria-label="Восьмая страница">8</a>
+                  </li>
+                  <li class="visually-hidden pagination-item">
+                    <a class="pagination-link" href="#" aria-label="Девятая страница">9</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">5</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">6</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">7</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">8</a>
-                  </li><li class="pagination-item">
-                    <a class="pagination-link" href="#">9</a>
-                  </li>
-                  <li class="pagination-item">
-                    <a class="pagination-link" href="#">10</a>
+                    <a class="pagination-link" href="#" aria-label="Десятая страница">10</a>
                   </li>
                 </ul>
               </div>
               <div class="select-show">
                 <p class="select-description">Гостиниц на странице:</p>
-                <select class="select-control-hotel" name="Гостиниц на странице">
-                  <option value="4">4</option>
-                  <option value="10">10</option>
-                  <option value="20">38</option>
+                <select class="select-control-hotel" name="Гостиниц на странице" aria-label="Количество отображаемых гостиниц на странице">
+                  <option class="select-show-hotel" value="4">4</option>
+                  <option class="select-show-hotel" value="10">10</option>
+                  <option class="select-show-hotel" value="20">38</option>
                 </select>
               </div>
             </div>
