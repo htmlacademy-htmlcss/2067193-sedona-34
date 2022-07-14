@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
     <title>Седона</title>
   </head>
   <body>
@@ -18,7 +17,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-items">
-              <a class="navigation-link navigation-link-now" href="index.html">Главная</a>
+              <a class="navigation-link navigation-link-now" href="#">Главная</a>
             </li>
             <li class="navigation-items">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -155,7 +154,6 @@
                   width="25" 
                   height="14" 
                   alt="ВКонтакте" 
-                  title="ВКонтакте"
                   fill="none" 
                   xmlns="http://www.w3.org/2000/svg"
                   >
@@ -193,7 +191,7 @@
             </ul>
           </section>
           <section class="footer-contacts">
-            <h2 class="footer-contacts-phone">+7 (812) 812-12-12</h2>
+            <a class="footer-contacts-phone" href="tel:+78121212" aria-label="Телефон для связи">+7 (812) 812-12-12</h2>
           </section>
           <section class="footer-contacts-logo">
             <a class="htmlacademy-link" href="https://htmlacademy.ru/">
@@ -226,7 +224,7 @@
               <!--right или wrong, для включения примечания для find-hotel-form-date-->
               <div class="find-hotel-form-date wrong">
                 <label class="label-input" for="arrival-date">
-                  <span class="arrival-date-h4">Дата Заезда:</h4>
+                  <span class="arrival-date-h4">Дата Заезда:</span>
                 </label>
                 <div class="field-group">
                   <input 
@@ -249,7 +247,7 @@
               <!--right или wrong, для включения примечания для find-hotel-form-date-->
               <div class="find-hotel-form-date right">
                 <label class="label-input" for="departure-date">
-                  <span class="arrival-date-h4">Дата Выезда:</h4>
+                  <span class="arrival-date-h4">Дата Выезда:</span>
                 </label>
                 <div class="field-group">
                   <input 
@@ -276,7 +274,7 @@
                   <div class="button-adults">
                     <input
                       class="people-field field-modal"
-                      type="text"
+                      type="number"
                       id="adult"
                       name="adult"
                       placeholder="2"
@@ -305,20 +303,31 @@
                         type="button"
                         aria-labelledby="tooltip-label"
                       >
-                        <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                        <svg 
+                        class="tooltip-icon" 
+                        width="1" 
+                        height="9" 
+                        viewBox="0 0 1 9" 
+                        fill="none" 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        focusable="false">
                           <g clip-path="url(#clip0_33716_652)">
                             <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
                             <path d="M1 0H0V1H1V0Z" fill="white"/>
                           </g>
                         </svg>
                       </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      <span 
+                      class="tooltip-text" 
+                      role="tooltip" 
+                      id="tooltip-label"
+                      >Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                     </span>
                   </span>
                   <div class="button-adults">
                     <input
                       class="people-field field-modal"
-                      type="text"
+                      type="number"
                       id="children"
                       name="children"
                       placeholder="1"
@@ -337,7 +346,7 @@
                   </div>
                 </div>
               </div>
-              <button class="button-blue button-find type="submit">
+              <button class="button-blue button-find" type="submit">
                 Найти
               </button>
             </form>

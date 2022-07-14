@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
     <title>Каталог</title>
   </head>
   <body>
@@ -64,7 +63,7 @@
                 <div class="catalog-left-column">
                   <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">
-                      <span class="catalog-filter-h4">Инфраструктура:</h4>
+                      <span class="catalog-filter-h4">Инфраструктура:</span>
                       </legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -97,13 +96,14 @@
                             name="infrastructure" 
                             value="wifi">
                             <span class="control-mark"></span>
-                            <span class="control-label">Wi-Fi</span>                          </label>
+                            <span class="control-label">Wi-Fi</span>                          
+                          </label>
                         </li>
                       </ul>
                     </fieldset>
                     <fieldset class="catalog-filter-group">
                       <legend class="catalog-filter-title">
-                        <span class="catalog-filter-h4">Тип Жилья:</h4>
+                        <span class="catalog-filter-h4">Тип Жилья:</span>
                       </legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
@@ -115,7 +115,8 @@
                             value="hotel"
                             checked>
                             <span class="control-mark"></span>
-                            <span class="control-label">Гостиница</span>                          </label>
+                            <span class="control-label">Гостиница</span>                          
+                          </label>
                         </li>
                         <li class="catalog-filter-item">
                           <label class="control">
@@ -124,7 +125,8 @@
                             name="type-house" 
                             value="motel">
                             <span class="control-mark"></span>
-                            <span class="control-label">Мотель</span>                          </label>
+                            <span class="control-label">Мотель</span>                          
+                          </label>
                         </li>
                         <li class="catalog-filter-item">
                           <label class="control">
@@ -134,7 +136,8 @@
                             name="type-house" 
                             value="appartament">
                             <span class="control-mark"></span>
-                            <span class="control-label">Аппартаменты</span>                          </label>
+                            <span class="control-label">Аппартаменты</span>                          
+                          </label>
                         </li>
                       </ul>
                     </fieldset>
@@ -142,7 +145,7 @@
                 <div class="catalog-right-column">
                   <fieldset class="catalog-right-filter-group">
                     <legend class="catalog-right-title">
-                      <span class="catalog-filter-h4">Стоимость, ₽:</h4>
+                      <span class="catalog-filter-h4">Стоимость, ₽:</span>
                     </legend>
                     <div class="wrap-input">
                       <label class="control-priсe-min" aria-label="Минимальная цена">
@@ -182,8 +185,8 @@
                     </div>
                   </fieldset>
                   <div class="apply-filter">
-                    <button class="button apply-button" type="sumbit" name="apply-button">Применить</button>
-                    <button class="button clean-button" type="reset" name="clean-button">Сбросить</button>
+                    <button class="button apply-button" type="sumbit">Применить</button>
+                    <button class="button clean-button" type="reset">Сбросить</button>
                   </div>
                 </div>
               </form>
@@ -194,10 +197,10 @@
               <h2 class="inner-section-title">Найдено гостиниц: 38</h2>
               <!-- Сортировка -->
               <div class="sorting-container">
-                <select class="select-control sorting-type" aria-label="Сортировка">
-                  <option value="popular">Сначала популярные</option>
-                  <option value="cheap" checked>Сначала дешeвые</option>
+                <select class="select-control" aria-label="Сортировка">
+                  <option value="cheap">Сначала дешeвые</option>
                   <option value="expensive">Сначала дорогие</option>
+                  <option value="popular">Сначала популярные</option>
                 </select>
                 <!-- Вариация показов -->
                 <div class="button-container">
@@ -261,7 +264,7 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 4000 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="favorite-button">в избранное</button>
+                    <button class="favorite-button">в избранное</button>
                     <div class="hotel-star four-stars"></div>
                     <p class="holel-card-star">Рейтинг: 8,5</p>
                   </div>
@@ -277,7 +280,7 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 5000 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button-second" name="favorite-button">в избранном</button>
+                    <button class="favorite-button-second">в избранном</button>
                     <div class="hotel-star four-stars"></div>
                     <p class="holel-card-star">Рейтинг: 9,2</p>
                   </div>
@@ -293,7 +296,7 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 2500 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="favorite-button">в избранное</button>
+                    <button class="favorite-button">в избранное</button>
                     <div class="hotel-star three-stars"></div>
                     <p class="holel-card-star">Рейтинг: 6,9</p>
                   </div>
@@ -309,7 +312,7 @@
                     <p class="holel-card-text">Гостиница</p>
                     <p class="holel-card-price">От 1500 ₽</p>
                     <a class="holel-card-button button" href="#">Подробнее</a>
-                    <button class="favorite-button" name="favorite-button">в избранное</button>
+                    <button class="favorite-button">в избранное</button>
                     <div class="hotel-star two-stars"></div>
                     <p class="holel-card-star">Рейтинг: 5,0</p>
                   </div>
@@ -322,7 +325,7 @@
               <div class="pagination-container">
                 <ul class="pagination-list">
                   <li class="pagination-item">
-                    <a class="pagination-link pagination-first" href="#" aria-label="Первая страница">1</a>
+                    <a class="pagination-link pagination-first" aria-label="Первая страница">1</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#" aria-label="Вторая страница">2</a>
@@ -334,22 +337,7 @@
                     <a class="pagination-link" href="#" aria-label="Четвертая страница">4</a>
                   </li>
                   <li class="pagination-item">
-                    <a class="pagination-link" href="#">...</a>
-                  </li>
-                  <li class="visually-hidden pagination-item">
-                    <a class="pagination-link" href="#" aria-label="Пятая страница">5</a>
-                  </li>
-                  <li class="visually-hidden pagination-item">
-                    <a class="pagination-link" href="#" aria-label="Шестая страница">6</a>
-                  </li>
-                  <li class="visually-hidden pagination-item">
-                    <a class="pagination-link" href="#" aria-label="Седьмая страница">7</a>
-                  </li>
-                  <li class="visually-hidden pagination-item">
-                    <a class="pagination-link" href="#" aria-label="Восьмая страница">8</a>
-                  </li>
-                  <li class="visually-hidden pagination-item">
-                    <a class="pagination-link" href="#" aria-label="Девятая страница">9</a>
+                    <a class="pagination-link">...</a>
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link" href="#" aria-label="Десятая страница">10</a>
@@ -452,7 +440,6 @@
               height="33" 
               aria-hidden="true"
               focusable="false"
-              title="HTML Academy"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               >

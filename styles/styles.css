@@ -39,7 +39,7 @@ body {
     display: inline-block;
     padding: 0;
     margin: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -123,6 +123,7 @@ body {
     margin-left: 17px;
     padding: 0;
     width: 570px;
+    font-family: "PT Sans", sans-serif;
   }
   
   .navigation-items {
@@ -325,15 +326,19 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    max-width: 620px;
+    margin: 0px auto;
 }
 
 .advantages-main-description {
-    margin-top: 31px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     color: #333333;
+    max-width: 654px;
+    margin: 0px auto;
+    margin-top: 31px;
 }
 
 /* Преимущества Список */
@@ -490,8 +495,9 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
-    margin: 0px;
+    margin: 0px auto;
     margin-top: 29px;
+    max-width: 592px;
 }
 
 .button-search-hotel {
@@ -1029,6 +1035,18 @@ body {
     line-height: 21px;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
 .button-adults {
     width: 133px;
     position: relative;
@@ -1160,6 +1178,7 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 256px;
+    min-height: 143px;
     margin-top: 16px;
     right: 30%;
     padding: 15px 18px 18px 22px;
@@ -1483,7 +1502,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     }
 
@@ -1498,7 +1517,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
 }
 
@@ -1513,7 +1532,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
 }
 
@@ -1632,6 +1651,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 60px;
+    font-family: "PT Sans", sans-serif;
 }
 
 .apply-button:hover {
@@ -1665,6 +1685,7 @@ background: #E5E5E5;
     background-color: transparent;
     font-weight: 400;
     text-transform: none;
+    font-family: "PT Sans", sans-serif;
 }
 
 .clean-button:hover {
@@ -1706,6 +1727,7 @@ background: #E5E5E5;
             justify-content: space-between;
     text-align: center;
     vertical-align: middle;
+    font-family: "PT Sans", sans-serif;
 }
 
 /* Найдено гостиниц */
@@ -1739,6 +1761,8 @@ background: #E5E5E5;
     height: 49px;
     margin: 0px;
     margin-right: 78px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -1931,7 +1955,7 @@ background: #E5E5E5;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 8px;
-    /*display: flex;*/
+    font-family: "PT Sans", sans-serif;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1960,7 +1984,7 @@ background: #E5E5E5;
     width: 140px;
     height: 37px;
     background: #82B3D3;
-    
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -2003,7 +2027,7 @@ background: #E5E5E5;
     width: 140px;
     height: 37px;
     background: #7DB54F;
-    
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -2198,7 +2222,9 @@ background: #E5E5E5;
     margin: 0px;
     padding: 0px;
     padding-top: 14px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
+    font-family: 'PT Sans';
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -2214,12 +2240,17 @@ background: #E5E5E5;
     margin-left: 51px;
     padding: 0px;
     padding-left: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    background-color: #ffffff;
+    appearance: none;
+    background-image: url("../images/decor/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
 }
 
 .select-control-hotel:hover {
