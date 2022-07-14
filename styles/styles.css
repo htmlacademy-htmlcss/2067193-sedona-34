@@ -267,11 +267,11 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding-top: 51px;
-    padding-bottom: 82px;
+    padding-bottom: 25px;
     background-image: url("../images/decor/main-picture-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #ffffff;
+    background-color: #3F5E72;
     color: #000000;
 }
 
@@ -315,7 +315,7 @@ body {
 .advantages {
     background-color: #ffffff;
     text-align: center;
-    margin-top: -20px;
+    margin-top: 63px;
     margin-bottom: 90px;
 }
 
@@ -336,7 +336,7 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
-    max-width: 654px;
+    max-width: 660px;
     margin: 0px auto;
     margin-top: 31px;
 }
@@ -557,7 +557,7 @@ body {
     background-image: url("../images/decor/page-footer.jpg");
     background-size: 1200px;
     background-repeat: no-repeat;
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: #3F5E72;
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
@@ -733,8 +733,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 47px;
+    width: 48px;
     height: 40px;
+}
+
+.footer-social-link svg {
+    fill: #83B3D3;
 }
 
 .footer-social-link:hover svg {
@@ -760,7 +764,7 @@ body {
     margin: 0;
     margin-top: 44px;
     margin-bottom: 35px;
-    margin-left: -43px;
+    margin-left: 62px;
 }
 
 .footer-contacts-phone {
@@ -774,6 +778,7 @@ body {
     margin: 0px;
     padding: 0px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-contacts-phone:hover {
@@ -801,6 +806,10 @@ body {
     margin-right: 70px;
     width: 115px;
     margin-top: 10px;
+}
+
+.htmlacademy-link svg {
+    fill: #000000;
 }
 
 .htmlacademy-link:hover svg {
@@ -1504,7 +1513,7 @@ input[type="number"]:focus {
     line-height: 21px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
-    }
+}
 
 .control-priсe-min {
     width: 144px;
