@@ -39,7 +39,7 @@ body {
     display: inline-block;
     padding: 0;
     margin: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -123,6 +123,7 @@ body {
     margin-left: 17px;
     padding: 0;
     width: 570px;
+    font-family: "PT Sans", sans-serif;
   }
   
   .navigation-items {
@@ -136,7 +137,7 @@ body {
     width: 100%;
     height: 2px;
     background-color: #756257;
-    content: "";
+    content: " ";
   }
   
   .navigation-link {
@@ -266,11 +267,11 @@ body {
     width: 1200px;
     margin: 0 auto;
     padding-top: 51px;
-    padding-bottom: 82px;
+    padding-bottom: 25px;
     background-image: url("../images/decor/main-picture-background.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-color: #ffffff;
+    background-color: #3F5E72;
     color: #000000;
 }
 
@@ -287,7 +288,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: #FFFFFF;
-    content: "";
+    content: " ";
 }   
 
 .main-picture-welcome {
@@ -314,7 +315,7 @@ body {
 .advantages {
     background-color: #ffffff;
     text-align: center;
-    margin-top: -20px;
+    margin-top: 63px;
     margin-bottom: 90px;
 }
 
@@ -325,15 +326,19 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    max-width: 620px;
+    margin: 0px auto;
 }
 
 .advantages-main-description {
-    margin-top: 31px;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
     color: #333333;
+    max-width: 660px;
+    margin: 0px auto;
+    margin-top: 31px;
 }
 
 /* Преимущества Список */
@@ -376,7 +381,7 @@ body {
     min-height: 384px;
 }
 
-.house {
+.advantages-item.house::before {
     width: 75px;
     height: 72px;
     margin-bottom: 30px;
@@ -384,10 +389,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    content: "";
+    content: " ";
 }
 
-.food {
+.advantages-item.food::before {
     width: 74px;
     height: 70px;
     margin-bottom: 30px;
@@ -395,10 +400,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    content: "";
+    content: " ";
 }
 
-.souvenirs {
+.advantages-item.souvenirs::before {
     width: 64px;
     height: 76px;
     margin-bottom: 30px;
@@ -406,7 +411,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    content: "";
+    content: " ";
 }
 
 .real-city {
@@ -490,8 +495,10 @@ body {
     line-height: 26px;
     text-align: center;
     color: #333333;
-    margin: 0px;
+    margin: 0px auto;
     margin-top: 29px;
+    max-width: 592px;
+    padding: 0px;
 }
 
 .button-search-hotel {
@@ -551,7 +558,7 @@ body {
     background-image: url("../images/decor/page-footer.jpg");
     background-size: 1200px;
     background-repeat: no-repeat;
-    background-color: rgba(131, 179, 211, 0.12);
+    background-color: #3F5E72;
     padding-top: 94px;
     padding-bottom: 94px;
     text-align: center;
@@ -727,8 +734,12 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 47px;
+    width: 48px;
     height: 40px;
+}
+
+.footer-social-link svg {
+    fill: #83B3D3;
 }
 
 .footer-social-link:hover svg {
@@ -753,8 +764,8 @@ body {
     text-align: center;
     margin: 0;
     margin-top: 44px;
-    margin-bottom: 35px;
-    margin-left: -43px;
+    margin-bottom: 36px;
+    margin-left: 64px;
 }
 
 .footer-contacts-phone {
@@ -768,6 +779,7 @@ body {
     margin: 0px;
     padding: 0px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .footer-contacts-phone:hover {
@@ -795,6 +807,10 @@ body {
     margin-right: 70px;
     width: 115px;
     margin-top: 10px;
+}
+
+.htmlacademy-link svg {
+    fill: #000000;
 }
 
 .htmlacademy-link:hover svg {
@@ -908,6 +924,8 @@ body {
 }
 
 .label-input {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     -ms-flex-item-align: center;
@@ -928,6 +946,8 @@ body {
     border-radius: 4px;
     border: none;
     padding: 14px 19px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
@@ -1024,9 +1044,23 @@ body {
             box-sizing: border-box;
     height: 50px;
     padding: 15px 61px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .button-adults {
@@ -1049,7 +1083,7 @@ body {
     position: absolute;
     top: 13px;
     left: 6px;
-    content: "";
+    content: " ";
     background-image: url("../images/decor/button-minus.svg");
     background-position: center;
     opacity: 0.3;
@@ -1064,7 +1098,7 @@ body {
     width: 13px;
     height: 13px;
     position: absolute;
-    content: "";
+    content: " ";
     background-image: url("../images/decor/button-plus.svg");
     background-position: center;
     opacity: 0.3;
@@ -1160,6 +1194,7 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 256px;
+    min-height: 143px;
     margin-top: 16px;
     right: 30%;
     padding: 15px 18px 18px 22px;
@@ -1178,7 +1213,7 @@ body {
 }
   
 .tooltip-text::before {
-    content: "";
+    content: " ";
     background-image: url("../images/decor/triangle-black.svg");
     background-repeat: no-repeat;
     width: 19px;
@@ -1201,7 +1236,7 @@ body {
 
 .inner-header {
     background-image: url("../images/decor/catalog-background.jpg");
-    background-color: #82B3D3;
+    background-color: #3F5E72;
     background-repeat: no-repeat;
     background-size: 100% auto;
     color: #FFFFFF;
@@ -1253,6 +1288,10 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-icon {
+    fill:#FFFFFF;
+}
+
 .breadcrumbs-icon:hover {
     fill: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -1267,7 +1306,7 @@ body {
     background-repeat: no-repeat;
     background-size: 5px 8px;
     position: absolute;
-    content: "";
+    content: " ";
 }
 
 .main-page-item:last-child::after {
@@ -1350,6 +1389,8 @@ body {
 
 .control-input {
     color: #FFFFFF;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -1373,7 +1414,7 @@ body {
   
 .control-input[type="checkbox"]:checked + .control-mark::before {
     position: absolute;
-    content: "";
+    content: " ";
     background-image: url("../images/decor/checkmark.svg");
     background-repeat: no-repeat;
     top: 5px;
@@ -1399,7 +1440,7 @@ body {
   
 .control-input[type="radio"]:checked + .control-mark::before {
     position: absolute;
-    content: "";
+    content: " ";
     width: 10px;
     height: 10px;
     background-color: #3f5e72;
@@ -1472,8 +1513,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 144px;
-    height: 48px;
+    width: 140px;
+    height: 44px;
     margin: 0px;
     margin-bottom: 32px;
     padding-left: 19px;
@@ -1483,9 +1524,10 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
-    }
+    border: none;
+}
 
 .control-priсe-min {
     width: 144px;
@@ -1498,7 +1540,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
 }
 
@@ -1513,7 +1555,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
 }
 
@@ -1522,7 +1564,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    top: -69px;
+    top: -66px;
     left: 107px;
     opacity: 0.3;
     color: #ffffff;
@@ -1533,8 +1575,11 @@ body {
     padding: 0px;
     background: transparent;
     color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 23px;
+    box-shadow: none;
 }
 
 .control-priсe-min:hover,
@@ -1543,13 +1588,12 @@ body {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-priсe-min:focus,
-.control-priсe-max:focus {
-    border-color: #ffffff;
-    -webkit-box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
-            box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+.wrap-input input:focus,
+.wrap-input input:focus {
+    border: 2px solid #FFFFFF;
+    -webkit-box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
+            box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
     outline: none;
-    color: #FFFFFF;
 }
 
 .control-priсe-min:active,
@@ -1632,6 +1676,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     margin-top: 60px;
+    font-family: "PT Sans", sans-serif;
 }
 
 .apply-button:hover {
@@ -1665,6 +1710,7 @@ background: #E5E5E5;
     background-color: transparent;
     font-weight: 400;
     text-transform: none;
+    font-family: "PT Sans", sans-serif;
 }
 
 .clean-button:hover {
@@ -1672,7 +1718,7 @@ background: #E5E5E5;
 }
 
 .clean-button:focus::after {
-    content: "";
+    content: " ";
     border: 3px solid #83b3d3;
     border-radius: 4px;
     width: 100px;
@@ -1706,6 +1752,7 @@ background: #E5E5E5;
             justify-content: space-between;
     text-align: center;
     vertical-align: middle;
+    font-family: "PT Sans", sans-serif;
 }
 
 /* Найдено гостиниц */
@@ -1739,6 +1786,8 @@ background: #E5E5E5;
     height: 49px;
     margin: 0px;
     margin-right: 78px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -1931,7 +1980,7 @@ background: #E5E5E5;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 8px;
-    /*display: flex;*/
+    font-family: "PT Sans", sans-serif;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -1960,7 +2009,7 @@ background: #E5E5E5;
     width: 140px;
     height: 37px;
     background: #82B3D3;
-    
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -2003,7 +2052,7 @@ background: #E5E5E5;
     width: 140px;
     height: 37px;
     background: #7DB54F;
-    
+    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -2090,7 +2139,7 @@ background: #E5E5E5;
     background-image: url("../images/decor/line.svg");
     background-repeat: no-repeat;
     background-position: center;
-    content: "";
+    content: " ";
     width: 1060px;
     height: 1px;
     margin: 0px;
@@ -2198,7 +2247,9 @@ background: #E5E5E5;
     margin: 0px;
     padding: 0px;
     padding-top: 14px;
-    padding-bottom: 12px;
+    padding-bottom: 14px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -2214,12 +2265,17 @@ background: #E5E5E5;
     margin-left: 51px;
     padding: 0px;
     padding-left: 20px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
     border: 2px solid #E5E5E5;
     border-radius: 4px;
-    background-color: #ffffff;
+    appearance: none;
+    background-image: url("../images/decor/arrow-select.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
 }
 
 .select-control-hotel:hover {
