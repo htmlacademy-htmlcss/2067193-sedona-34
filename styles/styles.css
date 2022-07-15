@@ -137,7 +137,7 @@ body {
     width: 100%;
     height: 2px;
     background-color: #756257;
-    content: "";
+    content: " ";
   }
   
   .navigation-link {
@@ -288,7 +288,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     color: #FFFFFF;
-    content: "";
+    content: " ";
 }   
 
 .main-picture-welcome {
@@ -381,7 +381,7 @@ body {
     min-height: 384px;
 }
 
-.house {
+.advantages-item.house::before {
     width: 75px;
     height: 72px;
     margin-bottom: 30px;
@@ -389,10 +389,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    content: "";
+    content: " ";
 }
 
-.food {
+.advantages-item.food::before {
     width: 74px;
     height: 70px;
     margin-bottom: 30px;
@@ -400,10 +400,10 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    content: "";
+    content: " ";
 }
 
-.souvenirs {
+.advantages-item.souvenirs::before {
     width: 64px;
     height: 76px;
     margin-bottom: 30px;
@@ -411,7 +411,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    content: "";
+    content: " ";
 }
 
 .real-city {
@@ -498,6 +498,7 @@ body {
     margin: 0px auto;
     margin-top: 29px;
     max-width: 592px;
+    padding: 0px;
 }
 
 .button-search-hotel {
@@ -763,8 +764,8 @@ body {
     text-align: center;
     margin: 0;
     margin-top: 44px;
-    margin-bottom: 35px;
-    margin-left: 62px;
+    margin-bottom: 36px;
+    margin-left: 64px;
 }
 
 .footer-contacts-phone {
@@ -923,6 +924,8 @@ body {
 }
 
 .label-input {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     -ms-flex-item-align: center;
@@ -943,6 +946,8 @@ body {
     border-radius: 4px;
     border: none;
     padding: 14px 19px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 17px;
     line-height: 21px;
@@ -1039,6 +1044,8 @@ body {
             box-sizing: border-box;
     height: 50px;
     padding: 15px 61px;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -1076,7 +1083,7 @@ input[type="number"]:focus {
     position: absolute;
     top: 13px;
     left: 6px;
-    content: "";
+    content: " ";
     background-image: url("../images/decor/button-minus.svg");
     background-position: center;
     opacity: 0.3;
@@ -1091,7 +1098,7 @@ input[type="number"]:focus {
     width: 13px;
     height: 13px;
     position: absolute;
-    content: "";
+    content: " ";
     background-image: url("../images/decor/button-plus.svg");
     background-position: center;
     opacity: 0.3;
@@ -1206,7 +1213,7 @@ input[type="number"]:focus {
 }
   
 .tooltip-text::before {
-    content: "";
+    content: " ";
     background-image: url("../images/decor/triangle-black.svg");
     background-repeat: no-repeat;
     width: 19px;
@@ -1281,6 +1288,10 @@ input[type="number"]:focus {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-icon {
+    fill:#FFFFFF;
+}
+
 .breadcrumbs-icon:hover {
     fill: rgba(255, 255, 255, 0.6);
     cursor: pointer;
@@ -1295,7 +1306,7 @@ input[type="number"]:focus {
     background-repeat: no-repeat;
     background-size: 5px 8px;
     position: absolute;
-    content: "";
+    content: " ";
 }
 
 .main-page-item:last-child::after {
@@ -1378,6 +1389,8 @@ input[type="number"]:focus {
 
 .control-input {
     color: #FFFFFF;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -1401,7 +1414,7 @@ input[type="number"]:focus {
   
 .control-input[type="checkbox"]:checked + .control-mark::before {
     position: absolute;
-    content: "";
+    content: " ";
     background-image: url("../images/decor/checkmark.svg");
     background-repeat: no-repeat;
     top: 5px;
@@ -1427,7 +1440,7 @@ input[type="number"]:focus {
   
 .control-input[type="radio"]:checked + .control-mark::before {
     position: absolute;
-    content: "";
+    content: " ";
     width: 10px;
     height: 10px;
     background-color: #3f5e72;
@@ -1500,8 +1513,8 @@ input[type="number"]:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 144px;
-    height: 48px;
+    width: 140px;
+    height: 44px;
     margin: 0px;
     margin-bottom: 32px;
     padding-left: 19px;
@@ -1513,6 +1526,7 @@ input[type="number"]:focus {
     line-height: 21px;
     font-family: "PT Sans", sans-serif;
     font-style: normal;
+    border: none;
 }
 
 .control-priсe-min {
@@ -1550,7 +1564,7 @@ input[type="number"]:focus {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    top: -69px;
+    top: -66px;
     left: 107px;
     opacity: 0.3;
     color: #ffffff;
@@ -1561,8 +1575,11 @@ input[type="number"]:focus {
     padding: 0px;
     background: transparent;
     color: #ffffff;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
     font-size: 18px;
     line-height: 23px;
+    box-shadow: none;
 }
 
 .control-priсe-min:hover,
@@ -1571,13 +1588,12 @@ input[type="number"]:focus {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
-.control-priсe-min:focus,
-.control-priсe-max:focus {
-    border-color: #ffffff;
-    -webkit-box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
-            box-shadow: 0 0 0 3px #81b3d2, inset 0 0 0 3px #81b3d2;
+.wrap-input input:focus,
+.wrap-input input:focus {
+    border: 2px solid #FFFFFF;
+    -webkit-box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
+            box-shadow: 0 0 0 3px #81B3D2, inset 0 0 0 3px #81B3D2;
     outline: none;
-    color: #FFFFFF;
 }
 
 .control-priсe-min:active,
@@ -1702,7 +1718,7 @@ background: #E5E5E5;
 }
 
 .clean-button:focus::after {
-    content: "";
+    content: " ";
     border: 3px solid #83b3d3;
     border-radius: 4px;
     width: 100px;
@@ -2123,7 +2139,7 @@ background: #E5E5E5;
     background-image: url("../images/decor/line.svg");
     background-repeat: no-repeat;
     background-position: center;
-    content: "";
+    content: " ";
     width: 1060px;
     height: 1px;
     margin: 0px;
@@ -2232,7 +2248,7 @@ background: #E5E5E5;
     padding: 0px;
     padding-top: 14px;
     padding-bottom: 14px;
-    font-family: 'PT Sans';
+    font-family: "PT Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
